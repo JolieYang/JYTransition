@@ -1,18 +1,18 @@
 //
-//  SpringFlowerViewController.m
+//  SpringTreeViewController.m
 //  JYTransition
 //
 //  Created by Jolie_Yang on 16/9/19.
 //  Copyright © 2016年 Jolie_Yang. All rights reserved.
 //
 
-#import "SpringFlowerViewController.h"
+#import "SpringTreeViewController.h"
 
-@interface SpringFlowerViewController ()
+@interface SpringTreeViewController ()
 
 @end
 
-@implementation SpringFlowerViewController
+@implementation SpringTreeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -23,9 +23,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)popAction:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
+- (IBAction)popToRootAction:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
-
 
 @end

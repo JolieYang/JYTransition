@@ -15,6 +15,10 @@
 		A03577151D8F7CB0006D050F /* SpringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03577141D8F7CB0006D050F /* SpringViewController.m */; };
 		A03577191D8F7CFF006D050F /* SummerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03577181D8F7CFF006D050F /* SummerViewController.m */; };
 		A035771C1D8F7D28006D050F /* SpringFlowerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A035771B1D8F7D28006D050F /* SpringFlowerViewController.m */; };
+		A035771F1D8F8183006D050F /* SeasonTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A035771E1D8F8183006D050F /* SeasonTabBarController.m */; };
+		A03577221D8F821F006D050F /* SummerFlowerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03577211D8F821F006D050F /* SummerFlowerViewController.m */; };
+		A03577251D8F8866006D050F /* SpringTreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03577241D8F8866006D050F /* SpringTreeViewController.m */; };
+		A03577281D8FC135006D050F /* SummerTreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03577271D8FC135006D050F /* SummerTreeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,14 @@
 		A03577181D8F7CFF006D050F /* SummerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SummerViewController.m; path = ViewController/SummerViewController.m; sourceTree = "<group>"; };
 		A035771A1D8F7D28006D050F /* SpringFlowerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpringFlowerViewController.h; path = ViewController/SpringFlowerViewController.h; sourceTree = "<group>"; };
 		A035771B1D8F7D28006D050F /* SpringFlowerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpringFlowerViewController.m; path = ViewController/SpringFlowerViewController.m; sourceTree = "<group>"; };
+		A035771D1D8F8183006D050F /* SeasonTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SeasonTabBarController.h; path = ViewController/SeasonTabBarController.h; sourceTree = "<group>"; };
+		A035771E1D8F8183006D050F /* SeasonTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SeasonTabBarController.m; path = ViewController/SeasonTabBarController.m; sourceTree = "<group>"; };
+		A03577201D8F821F006D050F /* SummerFlowerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SummerFlowerViewController.h; path = ViewController/SummerFlowerViewController.h; sourceTree = "<group>"; };
+		A03577211D8F821F006D050F /* SummerFlowerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SummerFlowerViewController.m; path = ViewController/SummerFlowerViewController.m; sourceTree = "<group>"; };
+		A03577231D8F8866006D050F /* SpringTreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpringTreeViewController.h; path = ViewController/SpringTreeViewController.h; sourceTree = "<group>"; };
+		A03577241D8F8866006D050F /* SpringTreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpringTreeViewController.m; path = ViewController/SpringTreeViewController.m; sourceTree = "<group>"; };
+		A03577261D8FC135006D050F /* SummerTreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SummerTreeViewController.h; path = ViewController/SummerTreeViewController.h; sourceTree = "<group>"; };
+		A03577271D8FC135006D050F /* SummerTreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SummerTreeViewController.m; path = ViewController/SummerTreeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,12 +99,20 @@
 		A03577161D8F7CB8006D050F /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				A035771D1D8F8183006D050F /* SeasonTabBarController.h */,
+				A035771E1D8F8183006D050F /* SeasonTabBarController.m */,
 				A03577131D8F7CB0006D050F /* SpringViewController.h */,
 				A03577141D8F7CB0006D050F /* SpringViewController.m */,
 				A035771A1D8F7D28006D050F /* SpringFlowerViewController.h */,
 				A035771B1D8F7D28006D050F /* SpringFlowerViewController.m */,
+				A03577231D8F8866006D050F /* SpringTreeViewController.h */,
+				A03577241D8F8866006D050F /* SpringTreeViewController.m */,
 				A03577171D8F7CFF006D050F /* SummerViewController.h */,
 				A03577181D8F7CFF006D050F /* SummerViewController.m */,
+				A03577201D8F821F006D050F /* SummerFlowerViewController.h */,
+				A03577211D8F821F006D050F /* SummerFlowerViewController.m */,
+				A03577261D8FC135006D050F /* SummerTreeViewController.h */,
+				A03577271D8FC135006D050F /* SummerTreeViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -168,10 +188,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A03577011D8F784A006D050F /* AppDelegate.m in Sources */,
+				A03577221D8F821F006D050F /* SummerFlowerViewController.m in Sources */,
 				A03577191D8F7CFF006D050F /* SummerViewController.m in Sources */,
 				A03576FE1D8F784A006D050F /* main.m in Sources */,
+				A035771F1D8F8183006D050F /* SeasonTabBarController.m in Sources */,
+				A03577281D8FC135006D050F /* SummerTreeViewController.m in Sources */,
 				A03577151D8F7CB0006D050F /* SpringViewController.m in Sources */,
 				A035771C1D8F7D28006D050F /* SpringFlowerViewController.m in Sources */,
+				A03577251D8F8866006D050F /* SpringTreeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
