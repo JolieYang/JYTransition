@@ -1,0 +1,329 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A03576FE1D8F784A006D050F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A03576FD1D8F784A006D050F /* main.m */; };
+		A03577011D8F784A006D050F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A03577001D8F784A006D050F /* AppDelegate.m */; };
+		A03577071D8F784A006D050F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A03577051D8F784A006D050F /* Main.storyboard */; };
+		A03577091D8F784A006D050F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A03577081D8F784A006D050F /* Assets.xcassets */; };
+		A035770C1D8F784A006D050F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A035770A1D8F784A006D050F /* LaunchScreen.storyboard */; };
+		A03577151D8F7CB0006D050F /* SpringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03577141D8F7CB0006D050F /* SpringViewController.m */; };
+		A03577191D8F7CFF006D050F /* SummerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03577181D8F7CFF006D050F /* SummerViewController.m */; };
+		A035771C1D8F7D28006D050F /* SpringFlowerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A035771B1D8F7D28006D050F /* SpringFlowerViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A03576F91D8F784A006D050F /* JYTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JYTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A03576FD1D8F784A006D050F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A03576FF1D8F784A006D050F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A03577001D8F784A006D050F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A03577061D8F784A006D050F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A03577081D8F784A006D050F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A035770B1D8F784A006D050F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A035770D1D8F784A006D050F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A03577131D8F7CB0006D050F /* SpringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpringViewController.h; path = ViewController/SpringViewController.h; sourceTree = "<group>"; };
+		A03577141D8F7CB0006D050F /* SpringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpringViewController.m; path = ViewController/SpringViewController.m; sourceTree = "<group>"; };
+		A03577171D8F7CFF006D050F /* SummerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SummerViewController.h; path = ViewController/SummerViewController.h; sourceTree = "<group>"; };
+		A03577181D8F7CFF006D050F /* SummerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SummerViewController.m; path = ViewController/SummerViewController.m; sourceTree = "<group>"; };
+		A035771A1D8F7D28006D050F /* SpringFlowerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpringFlowerViewController.h; path = ViewController/SpringFlowerViewController.h; sourceTree = "<group>"; };
+		A035771B1D8F7D28006D050F /* SpringFlowerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpringFlowerViewController.m; path = ViewController/SpringFlowerViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A03576F61D8F784A006D050F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A03576F01D8F784A006D050F = {
+			isa = PBXGroup;
+			children = (
+				A03576FB1D8F784A006D050F /* JYTransition */,
+				A03576FA1D8F784A006D050F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A03576FA1D8F784A006D050F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A03576F91D8F784A006D050F /* JYTransition.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A03576FB1D8F784A006D050F /* JYTransition */ = {
+			isa = PBXGroup;
+			children = (
+				A03577161D8F7CB8006D050F /* ViewController */,
+				A03576FF1D8F784A006D050F /* AppDelegate.h */,
+				A03577001D8F784A006D050F /* AppDelegate.m */,
+				A03577051D8F784A006D050F /* Main.storyboard */,
+				A03577081D8F784A006D050F /* Assets.xcassets */,
+				A035770A1D8F784A006D050F /* LaunchScreen.storyboard */,
+				A035770D1D8F784A006D050F /* Info.plist */,
+				A03576FC1D8F784A006D050F /* Supporting Files */,
+			);
+			path = JYTransition;
+			sourceTree = "<group>";
+		};
+		A03576FC1D8F784A006D050F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A03576FD1D8F784A006D050F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A03577161D8F7CB8006D050F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A03577131D8F7CB0006D050F /* SpringViewController.h */,
+				A03577141D8F7CB0006D050F /* SpringViewController.m */,
+				A035771A1D8F7D28006D050F /* SpringFlowerViewController.h */,
+				A035771B1D8F7D28006D050F /* SpringFlowerViewController.m */,
+				A03577171D8F7CFF006D050F /* SummerViewController.h */,
+				A03577181D8F7CFF006D050F /* SummerViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A03576F81D8F784A006D050F /* JYTransition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A03577101D8F784A006D050F /* Build configuration list for PBXNativeTarget "JYTransition" */;
+			buildPhases = (
+				A03576F51D8F784A006D050F /* Sources */,
+				A03576F61D8F784A006D050F /* Frameworks */,
+				A03576F71D8F784A006D050F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JYTransition;
+			productName = JYTransition;
+			productReference = A03576F91D8F784A006D050F /* JYTransition.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A03576F11D8F784A006D050F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Jolie_Yang;
+				TargetAttributes = {
+					A03576F81D8F784A006D050F = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = A03576F41D8F784A006D050F /* Build configuration list for PBXProject "JYTransition" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A03576F01D8F784A006D050F;
+			productRefGroup = A03576FA1D8F784A006D050F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A03576F81D8F784A006D050F /* JYTransition */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A03576F71D8F784A006D050F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A035770C1D8F784A006D050F /* LaunchScreen.storyboard in Resources */,
+				A03577091D8F784A006D050F /* Assets.xcassets in Resources */,
+				A03577071D8F784A006D050F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A03576F51D8F784A006D050F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A03577011D8F784A006D050F /* AppDelegate.m in Sources */,
+				A03577191D8F7CFF006D050F /* SummerViewController.m in Sources */,
+				A03576FE1D8F784A006D050F /* main.m in Sources */,
+				A03577151D8F7CB0006D050F /* SpringViewController.m in Sources */,
+				A035771C1D8F7D28006D050F /* SpringFlowerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A03577051D8F784A006D050F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A03577061D8F784A006D050F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A035770A1D8F784A006D050F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A035770B1D8F784A006D050F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A035770E1D8F784A006D050F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A035770F1D8F784A006D050F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A03577111D8F784A006D050F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JYTransition/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.NL.JYTransition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A03577121D8F784A006D050F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JYTransition/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.NL.JYTransition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A03576F41D8F784A006D050F /* Build configuration list for PBXProject "JYTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A035770E1D8F784A006D050F /* Debug */,
+				A035770F1D8F784A006D050F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A03577101D8F784A006D050F /* Build configuration list for PBXNativeTarget "JYTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A03577111D8F784A006D050F /* Debug */,
+				A03577121D8F784A006D050F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A03576F11D8F784A006D050F /* Project object */;
+}
