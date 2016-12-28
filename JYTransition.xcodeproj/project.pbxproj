@@ -20,10 +20,11 @@
 		A03577251D8F8866006D050F /* SpringTreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03577241D8F8866006D050F /* SpringTreeViewController.m */; };
 		A03577281D8FC135006D050F /* SummerTreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03577271D8FC135006D050F /* SummerTreeViewController.m */; };
 		A035772D1D913C96006D050F /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A035772C1D913C96006D050F /* ContainerViewController.m */; };
-		A0D23AD51E13A43400BEC8AE /* AutumnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23AD41E13A43400BEC8AE /* AutumnViewController.m */; };
 		A0D23ADD1E13A5CA00BEC8AE /* WinterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23ADC1E13A5CA00BEC8AE /* WinterViewController.m */; };
 		A0D23AE01E13A69700BEC8AE /* ChildAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23ADF1E13A69700BEC8AE /* ChildAViewController.m */; };
 		A0D23AE31E13A6A400BEC8AE /* ChildBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23AE21E13A6A400BEC8AE /* ChildBViewController.m */; };
+		A0D23AE71E13B19800BEC8AE /* AutumnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23AE61E13B19800BEC8AE /* AutumnViewController.m */; };
+		A0D23AEA1E13B4F800BEC8AE /* CATransitionPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23AE91E13B4F800BEC8AE /* CATransitionPopViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,14 +52,16 @@
 		A03577271D8FC135006D050F /* SummerTreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SummerTreeViewController.m; path = ViewController/SummerTreeViewController.m; sourceTree = "<group>"; };
 		A035772B1D913C96006D050F /* ContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContainerViewController.h; path = Transition/ContainerViewController.h; sourceTree = "<group>"; };
 		A035772C1D913C96006D050F /* ContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContainerViewController.m; path = Transition/ContainerViewController.m; sourceTree = "<group>"; };
-		A0D23AD31E13A43400BEC8AE /* AutumnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutumnViewController.h; sourceTree = "<group>"; };
-		A0D23AD41E13A43400BEC8AE /* AutumnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutumnViewController.m; sourceTree = "<group>"; };
 		A0D23ADB1E13A5CA00BEC8AE /* WinterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WinterViewController.h; path = TransitionFromViewController/WinterViewController.h; sourceTree = "<group>"; };
 		A0D23ADC1E13A5CA00BEC8AE /* WinterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WinterViewController.m; path = TransitionFromViewController/WinterViewController.m; sourceTree = "<group>"; };
 		A0D23ADE1E13A69700BEC8AE /* ChildAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChildAViewController.h; path = TransitionFromViewController/ChildAViewController.h; sourceTree = "<group>"; };
 		A0D23ADF1E13A69700BEC8AE /* ChildAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChildAViewController.m; path = TransitionFromViewController/ChildAViewController.m; sourceTree = "<group>"; };
 		A0D23AE11E13A6A400BEC8AE /* ChildBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildBViewController.h; sourceTree = "<group>"; };
 		A0D23AE21E13A6A400BEC8AE /* ChildBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildBViewController.m; sourceTree = "<group>"; };
+		A0D23AE51E13B19800BEC8AE /* AutumnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutumnViewController.h; sourceTree = "<group>"; };
+		A0D23AE61E13B19800BEC8AE /* AutumnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutumnViewController.m; sourceTree = "<group>"; };
+		A0D23AE81E13B4F800BEC8AE /* CATransitionPopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATransitionPopViewController.h; sourceTree = "<group>"; };
+		A0D23AE91E13B4F800BEC8AE /* CATransitionPopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATransitionPopViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,10 +94,10 @@
 		A03576FB1D8F784A006D050F /* JYTransition */ = {
 			isa = PBXGroup;
 			children = (
-				A0D23ADA1E13A52300BEC8AE /* 夏 */,
+				A0D23AD91E13A51D00BEC8AE /* TransitionFromViewController */,
+				A0D23AE41E13B19800BEC8AE /* CATransition */,
 				A035772A1D913C7D006D050F /* Transition */,
 				A03577161D8F7CB8006D050F /* ViewController */,
-				A0D23AD91E13A51D00BEC8AE /* TransitionFromViewController */,
 				A03576FF1D8F784A006D050F /* AppDelegate.h */,
 				A03577001D8F784A006D050F /* AppDelegate.m */,
 				A03577051D8F784A006D050F /* Main.storyboard */,
@@ -102,8 +105,6 @@
 				A035770A1D8F784A006D050F /* LaunchScreen.storyboard */,
 				A035770D1D8F784A006D050F /* Info.plist */,
 				A03576FC1D8F784A006D050F /* Supporting Files */,
-				A0D23AD31E13A43400BEC8AE /* AutumnViewController.h */,
-				A0D23AD41E13A43400BEC8AE /* AutumnViewController.m */,
 			);
 			path = JYTransition;
 			sourceTree = "<group>";
@@ -159,11 +160,15 @@
 			name = TransitionFromViewController;
 			sourceTree = "<group>";
 		};
-		A0D23ADA1E13A52300BEC8AE /* 夏 */ = {
+		A0D23AE41E13B19800BEC8AE /* CATransition */ = {
 			isa = PBXGroup;
 			children = (
+				A0D23AE51E13B19800BEC8AE /* AutumnViewController.h */,
+				A0D23AE61E13B19800BEC8AE /* AutumnViewController.m */,
+				A0D23AE81E13B4F800BEC8AE /* CATransitionPopViewController.h */,
+				A0D23AE91E13B4F800BEC8AE /* CATransitionPopViewController.m */,
 			);
-			name = "夏";
+			path = CATransition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,7 +245,9 @@
 				A03577221D8F821F006D050F /* SummerFlowerViewController.m in Sources */,
 				A03577191D8F7CFF006D050F /* SummerViewController.m in Sources */,
 				A03576FE1D8F784A006D050F /* main.m in Sources */,
+				A0D23AE71E13B19800BEC8AE /* AutumnViewController.m in Sources */,
 				A0D23AE31E13A6A400BEC8AE /* ChildBViewController.m in Sources */,
+				A0D23AEA1E13B4F800BEC8AE /* CATransitionPopViewController.m in Sources */,
 				A0D23AE01E13A69700BEC8AE /* ChildAViewController.m in Sources */,
 				A035772D1D913C96006D050F /* ContainerViewController.m in Sources */,
 				A0D23ADD1E13A5CA00BEC8AE /* WinterViewController.m in Sources */,
@@ -248,7 +255,6 @@
 				A03577281D8FC135006D050F /* SummerTreeViewController.m in Sources */,
 				A03577151D8F7CB0006D050F /* SpringViewController.m in Sources */,
 				A035771C1D8F7D28006D050F /* SpringFlowerViewController.m in Sources */,
-				A0D23AD51E13A43400BEC8AE /* AutumnViewController.m in Sources */,
 				A03577251D8F8866006D050F /* SpringTreeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

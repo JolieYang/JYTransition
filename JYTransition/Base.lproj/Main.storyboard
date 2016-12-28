@@ -219,8 +219,8 @@
                     <connections>
                         <segue destination="Nns-V3-NFc" kind="relationship" relationship="viewControllers" id="tZP-Q0-P0K"/>
                         <segue destination="B3Z-ja-FVz" kind="relationship" relationship="viewControllers" id="FjM-9g-dge"/>
-                        <segue destination="QjO-Zw-qkE" kind="relationship" relationship="viewControllers" id="edM-nQ-hrO"/>
-                        <segue destination="VMk-xU-Wus" kind="relationship" relationship="viewControllers" id="nZ8-LJ-1HP"/>
+                        <segue destination="Mbu-Jh-zRq" kind="relationship" relationship="viewControllers" id="w68-dt-NUz"/>
+                        <segue destination="VMk-xU-Wus" kind="relationship" relationship="viewControllers" id="ugc-LU-weI"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aHU-Hw-g5k" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -302,7 +302,7 @@
             </objects>
             <point key="canvasLocation" x="4352" y="1123"/>
         </scene>
-        <!--Autumn View Controller-->
+        <!--CATransition-->
         <scene sceneID="cZd-Xi-7ou">
             <objects>
                 <viewController id="Mbu-Jh-zRq" customClass="AutumnViewController" sceneMemberID="viewController">
@@ -313,14 +313,60 @@
                     <view key="view" contentMode="scaleToFill" id="gJP-gi-JuX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3G5-b3-wRD">
+                                <rect key="frame" x="20" y="72" width="56" height="36"/>
+                                <color key="backgroundColor" red="0.99975007770000002" green="0.59942942860000004" blue="0.79572242500000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Fade">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="fadeAction:" destination="Mbu-Jh-zRq" eventType="touchUpInside" id="cFd-4z-9Mt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Df0-gv-fWG">
+                                <rect key="frame" x="79" y="72" width="63" height="36"/>
+                                <color key="backgroundColor" red="0.99975007770000002" green="0.59942942860000004" blue="0.79572242500000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Push">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pushAction:" destination="Mbu-Jh-zRq" eventType="touchUpInside" id="tTf-ur-nEe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZO-bV-Ztq">
+                                <rect key="frame" x="152" y="72" width="56" height="36"/>
+                                <color key="backgroundColor" red="0.99975007770000002" green="0.59942942860000004" blue="0.79572242500000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="MoveIn">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveInAction:" destination="Mbu-Jh-zRq" eventType="touchUpInside" id="2kd-79-sQT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4Z-Je-VFN">
+                                <rect key="frame" x="216" y="72" width="62" height="36"/>
+                                <color key="backgroundColor" red="0.99975007770000002" green="0.59942942860000004" blue="0.79572242500000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Reveal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="revealAction:" destination="Mbu-Jh-zRq" eventType="touchUpInside" id="QQ9-DC-nVr"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red_snowman" translatesAutoresizingMaskIntoConstraints="NO" id="VTR-as-bir">
+                                <rect key="frame" x="0.0" y="116" width="320" height="403"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="uVn-Ph-br1"/>
+                    <tabBarItem key="tabBarItem" title="autumn" image="autumn_icon" id="j4x-5n-9B9"/>
+                    <navigationItem key="navigationItem" title="CATransition" id="uVn-Ph-br1"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O1E-hT-xb3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2137" y="922"/>
+            <point key="canvasLocation" x="1605" y="922"/>
         </scene>
         <!--TransitionFromViewController-->
         <scene sceneID="HMB-Wi-3du">
@@ -394,25 +440,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tXZ-0b-BGC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1605" y="297"/>
-        </scene>
-        <!--autumn-->
-        <scene sceneID="sRb-wE-USk">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QjO-Zw-qkE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="autumn" image="autumn_icon" id="wg4-9w-Gyk"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dNx-PF-ejN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Mbu-Jh-zRq" kind="relationship" relationship="rootViewController" id="9E9-vn-hGp"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MhJ-WL-5ir" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1605" y="922"/>
         </scene>
         <!--winter-->
         <scene sceneID="R6U-ll-NTk">
@@ -513,9 +540,48 @@
             </objects>
             <point key="canvasLocation" x="2781" y="1546"/>
         </scene>
+        <!--Transition Pop View Controller-->
+        <scene sceneID="kmJ-Sq-hrS">
+            <objects>
+                <viewController storyboardIdentifier="CATransitionPopViewController" id="Upn-g0-rFf" customClass="CATransitionPopViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uMa-5e-Hmi"/>
+                        <viewControllerLayoutGuide type="bottom" id="bgF-fp-Tbi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZwY-BT-wHd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O79-86-XEP">
+                                <rect key="frame" x="113" y="211" width="95" height="36"/>
+                                <color key="backgroundColor" red="0.99975007770000002" green="0.59942942860000004" blue="0.79572242500000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="返回">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="popAction:" destination="Upn-g0-rFf" eventType="touchUpInside" id="jdk-4v-MdU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Today is Thuesday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ksz-Zd-v6g">
+                                <rect key="frame" x="89" y="273" width="143" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99933534860610962" green="1" blue="0.79550391435623169" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="x0C-w5-Obg"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4La-ht-sjb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2090" y="922"/>
+        </scene>
     </scenes>
     <resources>
         <image name="autumn_icon" width="24" height="24"/>
+        <image name="red_snowman" width="350" height="350"/>
         <image name="spring" width="24" height="24"/>
         <image name="summer" width="24" height="24"/>
         <image name="winter_icon" width="24" height="24"/>
