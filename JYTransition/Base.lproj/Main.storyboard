@@ -41,7 +41,6 @@
                                 <rect key="frame" x="102" y="378" width="117" height="30"/>
                                 <state key="normal" title="Presentation转场"/>
                                 <connections>
-                                    <action selector="jumpAction:" destination="NMl-dJ-UNW" eventType="touchUpInside" id="mES-2i-IQw"/>
                                     <action selector="presentationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8t1-Yt-eut"/>
                                 </connections>
                             </button>
@@ -106,10 +105,10 @@
             </objects>
             <point key="canvasLocation" x="2592" y="-1049"/>
         </scene>
-        <!--View Controller-->
+        <!--Summer View Controller-->
         <scene sceneID="YUd-WD-mMl">
             <objects>
-                <viewController id="NMl-dJ-UNW" sceneMemberID="viewController">
+                <viewController id="NMl-dJ-UNW" customClass="SummerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hi3-PJ-dgh"/>
                         <viewControllerLayoutGuide type="bottom" id="HWi-Pn-mau"/>
@@ -117,6 +116,18 @@
                     <view key="view" contentMode="scaleToFill" id="YvC-Zu-iGD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OnK-aq-dBP">
+                                <rect key="frame" x="113" y="266" width="95" height="36"/>
+                                <color key="backgroundColor" red="0.99975007770000002" green="0.59942942860000004" blue="0.79572242500000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Modal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="modalAction:" destination="NMl-dJ-UNW" eventType="touchUpInside" id="8Mv-UF-QQL"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="yI6-kY-23D"/>
@@ -562,6 +573,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4La-ht-sjb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2137" y="922"/>
+        </scene>
+        <!--Modal View Controller-->
+        <scene sceneID="g6x-YG-56w">
+            <objects>
+                <viewController storyboardIdentifier="ModalViewController" id="gEr-ra-IUw" customClass="ModalViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3BT-vp-LTR"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lgf-mi-4hZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uLU-e5-q5C">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDu-a9-ZgU">
+                                <rect key="frame" x="113" y="266" width="95" height="36"/>
+                                <color key="backgroundColor" red="0.99975007770000002" green="0.59942942860000004" blue="0.79572242500000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="返回">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissAction:" destination="gEr-ra-IUw" eventType="touchUpInside" id="EfA-HE-pKP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="D1a-ut-dXo"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZVz-3y-hV7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2492" y="305"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="EHc-VK-RB5">
+            <objects>
+                <viewController id="HKf-Zq-gu1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YSO-Ts-ViT"/>
+                        <viewControllerLayoutGuide type="bottom" id="dXr-ZU-Wzu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bjb-Bt-DSL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zYG-Ec-wSl"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AVs-QM-eHL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2834" y="305"/>
         </scene>
     </scenes>
     <resources>

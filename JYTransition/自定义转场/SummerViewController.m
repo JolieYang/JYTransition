@@ -7,8 +7,9 @@
 //
 
 #import "SummerViewController.h"
+#import "ModalViewController.h"
 
-@interface SummerViewController ()
+@interface SummerViewController ()<ModalViewControllerDelegate>
 
 @end
 
@@ -23,5 +24,14 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)modalAction:(id)sender {
+    ModalViewController *mvc = [[self storyboard] instantiateViewControllerWithIdentifier:@"ModalViewController"];
+    mvc.delegate = self;
+    [self presentViewController:mvc animated:YES completion:nil];
+}
 
+#pragma mark ModalViewControllerDelegate
+- (void)modalViewControllerDidClickedDismissButton:(ModalViewController *)vc {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end

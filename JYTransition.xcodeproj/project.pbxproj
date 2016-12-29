@@ -26,6 +26,7 @@
 		A0D23B031E14CBB500BEC8AE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0D23B011E14CBB500BEC8AE /* Info.plist */; };
 		A0D23B041E14CBB500BEC8AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23B021E14CBB500BEC8AE /* main.m */; };
 		A0D23B081E14CD5300BEC8AE /* SummerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23B071E14CD5300BEC8AE /* SummerViewController.m */; };
+		A0D23B0B1E14DE8600BEC8AE /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23B0A1E14DE8600BEC8AE /* ModalViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,8 @@
 		A0D23B021E14CBB500BEC8AE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Supporting Files/main.m"; sourceTree = "<group>"; };
 		A0D23B061E14CD5300BEC8AE /* SummerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummerViewController.h; sourceTree = "<group>"; };
 		A0D23B071E14CD5300BEC8AE /* SummerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummerViewController.m; sourceTree = "<group>"; };
+		A0D23B091E14DE8600BEC8AE /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
+		A0D23B0A1E14DE8600BEC8AE /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +179,8 @@
 			children = (
 				A0D23B061E14CD5300BEC8AE /* SummerViewController.h */,
 				A0D23B071E14CD5300BEC8AE /* SummerViewController.m */,
+				A0D23B091E14DE8600BEC8AE /* ModalViewController.h */,
+				A0D23B0A1E14DE8600BEC8AE /* ModalViewController.m */,
 			);
 			path = "自定义转场";
 			sourceTree = "<group>";
@@ -263,6 +268,7 @@
 				A0D23AFD1E14CA2600BEC8AE /* PresentationValueToNextViewController.m in Sources */,
 				A0D23ADD1E13A5CA00BEC8AE /* WinterViewController.m in Sources */,
 				A0D23AFC1E14CA2600BEC8AE /* PresentationViewController.m in Sources */,
+				A0D23B0B1E14DE8600BEC8AE /* ModalViewController.m in Sources */,
 				A0D23AED1E14C9A300BEC8AE /* SeasonTabBarController.m in Sources */,
 				A0D23B041E14CBB500BEC8AE /* main.m in Sources */,
 				A0D23AFB1E14CA2600BEC8AE /* SpringViewController.m in Sources */,
