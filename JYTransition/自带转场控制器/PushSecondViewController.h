@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SpringTreeViewController.h
 //  JYTransition
 //
 //  Created by Jolie_Yang on 16/9/19.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SummerViewController : UIViewController
-
+@interface PushSecondViewController : UIViewController
 
 @end
-
