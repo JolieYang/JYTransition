@@ -26,7 +26,6 @@
 }
 - (IBAction)fadeAction:(id)sender {
     [self transitionWithType:kCATransitionFade];
-    
 }
 
 - (IBAction)pushAction:(id)sender {
@@ -55,8 +54,10 @@
 //    [self.navigationController pushViewController:pop animated:YES];
     
     // 无导航栏
+    // [Tip]在Window上执行动画，才可在转场时执行动画。在view上执行动画，转场时无法执行
+//    [self.view.layer addAnimation:animation forKey:@"Animation"];
     [self.view.window.layer addAnimation:animation forKey:@"kTansitionAnimation"];
-    [self presentViewController:pop animated:YES completion:nil];
+    [self presentViewController:pop animated:NO completion:nil];// Animated设为NO，只见自定义动画。
 }
 
 @end

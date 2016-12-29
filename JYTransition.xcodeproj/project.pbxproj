@@ -7,61 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A03576FE1D8F784A006D050F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A03576FD1D8F784A006D050F /* main.m */; };
 		A03577011D8F784A006D050F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A03577001D8F784A006D050F /* AppDelegate.m */; };
 		A03577071D8F784A006D050F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A03577051D8F784A006D050F /* Main.storyboard */; };
 		A03577091D8F784A006D050F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A03577081D8F784A006D050F /* Assets.xcassets */; };
 		A035770C1D8F784A006D050F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A035770A1D8F784A006D050F /* LaunchScreen.storyboard */; };
-		A03577151D8F7CB0006D050F /* SpringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03577141D8F7CB0006D050F /* SpringViewController.m */; };
-		A03577191D8F7CFF006D050F /* SummerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03577181D8F7CFF006D050F /* SummerViewController.m */; };
-		A035771C1D8F7D28006D050F /* SpringFlowerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A035771B1D8F7D28006D050F /* SpringFlowerViewController.m */; };
-		A035771F1D8F8183006D050F /* SeasonTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A035771E1D8F8183006D050F /* SeasonTabBarController.m */; };
-		A03577221D8F821F006D050F /* SummerFlowerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03577211D8F821F006D050F /* SummerFlowerViewController.m */; };
-		A03577251D8F8866006D050F /* SpringTreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03577241D8F8866006D050F /* SpringTreeViewController.m */; };
-		A03577281D8FC135006D050F /* SummerTreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03577271D8FC135006D050F /* SummerTreeViewController.m */; };
 		A035772D1D913C96006D050F /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A035772C1D913C96006D050F /* ContainerViewController.m */; };
 		A0D23ADD1E13A5CA00BEC8AE /* WinterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23ADC1E13A5CA00BEC8AE /* WinterViewController.m */; };
 		A0D23AE01E13A69700BEC8AE /* ChildAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23ADF1E13A69700BEC8AE /* ChildAViewController.m */; };
-		A0D23AE31E13A6A400BEC8AE /* ChildBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23AE21E13A6A400BEC8AE /* ChildBViewController.m */; };
 		A0D23AE71E13B19800BEC8AE /* AutumnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23AE61E13B19800BEC8AE /* AutumnViewController.m */; };
 		A0D23AEA1E13B4F800BEC8AE /* CATransitionPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23AE91E13B4F800BEC8AE /* CATransitionPopViewController.m */; };
+		A0D23AED1E14C9A300BEC8AE /* SeasonTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23AEC1E14C9A200BEC8AE /* SeasonTabBarController.m */; };
+		A0D23AF91E14CA2600BEC8AE /* PushFlowerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23AF01E14CA2600BEC8AE /* PushFlowerViewController.m */; };
+		A0D23AFA1E14CA2600BEC8AE /* PushSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23AF21E14CA2600BEC8AE /* PushSecondViewController.m */; };
+		A0D23AFB1E14CA2600BEC8AE /* SpringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23AF41E14CA2600BEC8AE /* SpringViewController.m */; };
+		A0D23AFC1E14CA2600BEC8AE /* PresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23AF61E14CA2600BEC8AE /* PresentationViewController.m */; };
+		A0D23AFD1E14CA2600BEC8AE /* PresentationValueToNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23AF81E14CA2600BEC8AE /* PresentationValueToNextViewController.m */; };
+		A0D23B001E14CBA700BEC8AE /* ChildBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23AFF1E14CBA700BEC8AE /* ChildBViewController.m */; };
+		A0D23B031E14CBB500BEC8AE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0D23B011E14CBB500BEC8AE /* Info.plist */; };
+		A0D23B041E14CBB500BEC8AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23B021E14CBB500BEC8AE /* main.m */; };
+		A0D23B081E14CD5300BEC8AE /* SummerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23B071E14CD5300BEC8AE /* SummerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A03576F91D8F784A006D050F /* JYTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JYTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A03576FD1D8F784A006D050F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A03576FF1D8F784A006D050F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A03577001D8F784A006D050F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A03577061D8F784A006D050F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A03577081D8F784A006D050F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A035770B1D8F784A006D050F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A035770D1D8F784A006D050F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A03577131D8F7CB0006D050F /* SpringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpringViewController.h; path = ViewController/SpringViewController.h; sourceTree = "<group>"; };
-		A03577141D8F7CB0006D050F /* SpringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpringViewController.m; path = ViewController/SpringViewController.m; sourceTree = "<group>"; };
-		A03577171D8F7CFF006D050F /* SummerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SummerViewController.h; path = ViewController/SummerViewController.h; sourceTree = "<group>"; };
-		A03577181D8F7CFF006D050F /* SummerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SummerViewController.m; path = ViewController/SummerViewController.m; sourceTree = "<group>"; };
-		A035771A1D8F7D28006D050F /* SpringFlowerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpringFlowerViewController.h; path = ViewController/SpringFlowerViewController.h; sourceTree = "<group>"; };
-		A035771B1D8F7D28006D050F /* SpringFlowerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpringFlowerViewController.m; path = ViewController/SpringFlowerViewController.m; sourceTree = "<group>"; };
-		A035771D1D8F8183006D050F /* SeasonTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SeasonTabBarController.h; path = ViewController/SeasonTabBarController.h; sourceTree = "<group>"; };
-		A035771E1D8F8183006D050F /* SeasonTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SeasonTabBarController.m; path = ViewController/SeasonTabBarController.m; sourceTree = "<group>"; };
-		A03577201D8F821F006D050F /* SummerFlowerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SummerFlowerViewController.h; path = ViewController/SummerFlowerViewController.h; sourceTree = "<group>"; };
-		A03577211D8F821F006D050F /* SummerFlowerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SummerFlowerViewController.m; path = ViewController/SummerFlowerViewController.m; sourceTree = "<group>"; };
-		A03577231D8F8866006D050F /* SpringTreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpringTreeViewController.h; path = ViewController/SpringTreeViewController.h; sourceTree = "<group>"; };
-		A03577241D8F8866006D050F /* SpringTreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpringTreeViewController.m; path = ViewController/SpringTreeViewController.m; sourceTree = "<group>"; };
-		A03577261D8FC135006D050F /* SummerTreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SummerTreeViewController.h; path = ViewController/SummerTreeViewController.h; sourceTree = "<group>"; };
-		A03577271D8FC135006D050F /* SummerTreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SummerTreeViewController.m; path = ViewController/SummerTreeViewController.m; sourceTree = "<group>"; };
 		A035772B1D913C96006D050F /* ContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContainerViewController.h; path = Transition/ContainerViewController.h; sourceTree = "<group>"; };
 		A035772C1D913C96006D050F /* ContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContainerViewController.m; path = Transition/ContainerViewController.m; sourceTree = "<group>"; };
 		A0D23ADB1E13A5CA00BEC8AE /* WinterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WinterViewController.h; path = TransitionFromViewController/WinterViewController.h; sourceTree = "<group>"; };
 		A0D23ADC1E13A5CA00BEC8AE /* WinterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WinterViewController.m; path = TransitionFromViewController/WinterViewController.m; sourceTree = "<group>"; };
 		A0D23ADE1E13A69700BEC8AE /* ChildAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChildAViewController.h; path = TransitionFromViewController/ChildAViewController.h; sourceTree = "<group>"; };
 		A0D23ADF1E13A69700BEC8AE /* ChildAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChildAViewController.m; path = TransitionFromViewController/ChildAViewController.m; sourceTree = "<group>"; };
-		A0D23AE11E13A6A400BEC8AE /* ChildBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildBViewController.h; sourceTree = "<group>"; };
-		A0D23AE21E13A6A400BEC8AE /* ChildBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildBViewController.m; sourceTree = "<group>"; };
 		A0D23AE51E13B19800BEC8AE /* AutumnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutumnViewController.h; sourceTree = "<group>"; };
 		A0D23AE61E13B19800BEC8AE /* AutumnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutumnViewController.m; sourceTree = "<group>"; };
 		A0D23AE81E13B4F800BEC8AE /* CATransitionPopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATransitionPopViewController.h; sourceTree = "<group>"; };
 		A0D23AE91E13B4F800BEC8AE /* CATransitionPopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATransitionPopViewController.m; sourceTree = "<group>"; };
+		A0D23AEB1E14C9A200BEC8AE /* SeasonTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeasonTabBarController.h; sourceTree = "<group>"; };
+		A0D23AEC1E14C9A200BEC8AE /* SeasonTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeasonTabBarController.m; sourceTree = "<group>"; };
+		A0D23AEF1E14CA2600BEC8AE /* PushFlowerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushFlowerViewController.h; sourceTree = "<group>"; };
+		A0D23AF01E14CA2600BEC8AE /* PushFlowerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushFlowerViewController.m; sourceTree = "<group>"; };
+		A0D23AF11E14CA2600BEC8AE /* PushSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushSecondViewController.h; sourceTree = "<group>"; };
+		A0D23AF21E14CA2600BEC8AE /* PushSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushSecondViewController.m; sourceTree = "<group>"; };
+		A0D23AF31E14CA2600BEC8AE /* SpringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpringViewController.h; sourceTree = "<group>"; };
+		A0D23AF41E14CA2600BEC8AE /* SpringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpringViewController.m; sourceTree = "<group>"; };
+		A0D23AF51E14CA2600BEC8AE /* PresentationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentationViewController.h; sourceTree = "<group>"; };
+		A0D23AF61E14CA2600BEC8AE /* PresentationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentationViewController.m; sourceTree = "<group>"; };
+		A0D23AF71E14CA2600BEC8AE /* PresentationValueToNextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentationValueToNextViewController.h; sourceTree = "<group>"; };
+		A0D23AF81E14CA2600BEC8AE /* PresentationValueToNextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentationValueToNextViewController.m; sourceTree = "<group>"; };
+		A0D23AFE1E14CBA700BEC8AE /* ChildBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChildBViewController.h; path = TransitionFromViewController/ChildBViewController.h; sourceTree = "<group>"; };
+		A0D23AFF1E14CBA700BEC8AE /* ChildBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChildBViewController.m; path = TransitionFromViewController/ChildBViewController.m; sourceTree = "<group>"; };
+		A0D23B011E14CBB500BEC8AE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
+		A0D23B021E14CBB500BEC8AE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Supporting Files/main.m"; sourceTree = "<group>"; };
+		A0D23B061E14CD5300BEC8AE /* SummerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummerViewController.h; sourceTree = "<group>"; };
+		A0D23B071E14CD5300BEC8AE /* SummerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,16 +95,17 @@
 		A03576FB1D8F784A006D050F /* JYTransition */ = {
 			isa = PBXGroup;
 			children = (
+				A0D23AEB1E14C9A200BEC8AE /* SeasonTabBarController.h */,
+				A0D23AEC1E14C9A200BEC8AE /* SeasonTabBarController.m */,
+				A0D23AEE1E14CA2600BEC8AE /* 自带转场控制器 */,
+				A0D23B051E14CD3900BEC8AE /* 自定义转场 */,
 				A0D23AD91E13A51D00BEC8AE /* TransitionFromViewController */,
 				A0D23AE41E13B19800BEC8AE /* CATransition */,
-				A035772A1D913C7D006D050F /* Transition */,
-				A03577161D8F7CB8006D050F /* ViewController */,
 				A03576FF1D8F784A006D050F /* AppDelegate.h */,
 				A03577001D8F784A006D050F /* AppDelegate.m */,
 				A03577051D8F784A006D050F /* Main.storyboard */,
 				A03577081D8F784A006D050F /* Assets.xcassets */,
-				A035770A1D8F784A006D050F /* LaunchScreen.storyboard */,
-				A035770D1D8F784A006D050F /* Info.plist */,
+				A035772A1D913C7D006D050F /* Transition */,
 				A03576FC1D8F784A006D050F /* Supporting Files */,
 			);
 			path = JYTransition;
@@ -112,30 +114,11 @@
 		A03576FC1D8F784A006D050F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A03576FD1D8F784A006D050F /* main.m */,
+				A035770A1D8F784A006D050F /* LaunchScreen.storyboard */,
+				A0D23B011E14CBB500BEC8AE /* Info.plist */,
+				A0D23B021E14CBB500BEC8AE /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		A03577161D8F7CB8006D050F /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				A035771D1D8F8183006D050F /* SeasonTabBarController.h */,
-				A035771E1D8F8183006D050F /* SeasonTabBarController.m */,
-				A03577131D8F7CB0006D050F /* SpringViewController.h */,
-				A03577141D8F7CB0006D050F /* SpringViewController.m */,
-				A035771A1D8F7D28006D050F /* SpringFlowerViewController.h */,
-				A035771B1D8F7D28006D050F /* SpringFlowerViewController.m */,
-				A03577231D8F8866006D050F /* SpringTreeViewController.h */,
-				A03577241D8F8866006D050F /* SpringTreeViewController.m */,
-				A03577171D8F7CFF006D050F /* SummerViewController.h */,
-				A03577181D8F7CFF006D050F /* SummerViewController.m */,
-				A03577201D8F821F006D050F /* SummerFlowerViewController.h */,
-				A03577211D8F821F006D050F /* SummerFlowerViewController.m */,
-				A03577261D8FC135006D050F /* SummerTreeViewController.h */,
-				A03577271D8FC135006D050F /* SummerTreeViewController.m */,
-			);
-			name = ViewController;
 			sourceTree = "<group>";
 		};
 		A035772A1D913C7D006D050F /* Transition */ = {
@@ -154,8 +137,8 @@
 				A0D23ADC1E13A5CA00BEC8AE /* WinterViewController.m */,
 				A0D23ADE1E13A69700BEC8AE /* ChildAViewController.h */,
 				A0D23ADF1E13A69700BEC8AE /* ChildAViewController.m */,
-				A0D23AE11E13A6A400BEC8AE /* ChildBViewController.h */,
-				A0D23AE21E13A6A400BEC8AE /* ChildBViewController.m */,
+				A0D23AFE1E14CBA700BEC8AE /* ChildBViewController.h */,
+				A0D23AFF1E14CBA700BEC8AE /* ChildBViewController.m */,
 			);
 			name = TransitionFromViewController;
 			sourceTree = "<group>";
@@ -169,6 +152,32 @@
 				A0D23AE91E13B4F800BEC8AE /* CATransitionPopViewController.m */,
 			);
 			path = CATransition;
+			sourceTree = "<group>";
+		};
+		A0D23AEE1E14CA2600BEC8AE /* 自带转场控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				A0D23AF31E14CA2600BEC8AE /* SpringViewController.h */,
+				A0D23AF41E14CA2600BEC8AE /* SpringViewController.m */,
+				A0D23AF51E14CA2600BEC8AE /* PresentationViewController.h */,
+				A0D23AF61E14CA2600BEC8AE /* PresentationViewController.m */,
+				A0D23AF71E14CA2600BEC8AE /* PresentationValueToNextViewController.h */,
+				A0D23AF81E14CA2600BEC8AE /* PresentationValueToNextViewController.m */,
+				A0D23AEF1E14CA2600BEC8AE /* PushFlowerViewController.h */,
+				A0D23AF01E14CA2600BEC8AE /* PushFlowerViewController.m */,
+				A0D23AF11E14CA2600BEC8AE /* PushSecondViewController.h */,
+				A0D23AF21E14CA2600BEC8AE /* PushSecondViewController.m */,
+			);
+			path = "自带转场控制器";
+			sourceTree = "<group>";
+		};
+		A0D23B051E14CD3900BEC8AE /* 自定义转场 */ = {
+			isa = PBXGroup;
+			children = (
+				A0D23B061E14CD5300BEC8AE /* SummerViewController.h */,
+				A0D23B071E14CD5300BEC8AE /* SummerViewController.m */,
+			);
+			path = "自定义转场";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0D23B031E14CBB500BEC8AE /* Info.plist in Resources */,
 				A035770C1D8F784A006D050F /* LaunchScreen.storyboard in Resources */,
 				A03577091D8F784A006D050F /* Assets.xcassets in Resources */,
 				A03577071D8F784A006D050F /* Main.storyboard in Resources */,
@@ -241,21 +251,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0D23B081E14CD5300BEC8AE /* SummerViewController.m in Sources */,
 				A03577011D8F784A006D050F /* AppDelegate.m in Sources */,
-				A03577221D8F821F006D050F /* SummerFlowerViewController.m in Sources */,
-				A03577191D8F7CFF006D050F /* SummerViewController.m in Sources */,
-				A03576FE1D8F784A006D050F /* main.m in Sources */,
+				A0D23AFA1E14CA2600BEC8AE /* PushSecondViewController.m in Sources */,
 				A0D23AE71E13B19800BEC8AE /* AutumnViewController.m in Sources */,
-				A0D23AE31E13A6A400BEC8AE /* ChildBViewController.m in Sources */,
+				A0D23B001E14CBA700BEC8AE /* ChildBViewController.m in Sources */,
+				A0D23AF91E14CA2600BEC8AE /* PushFlowerViewController.m in Sources */,
 				A0D23AEA1E13B4F800BEC8AE /* CATransitionPopViewController.m in Sources */,
 				A0D23AE01E13A69700BEC8AE /* ChildAViewController.m in Sources */,
 				A035772D1D913C96006D050F /* ContainerViewController.m in Sources */,
+				A0D23AFD1E14CA2600BEC8AE /* PresentationValueToNextViewController.m in Sources */,
 				A0D23ADD1E13A5CA00BEC8AE /* WinterViewController.m in Sources */,
-				A035771F1D8F8183006D050F /* SeasonTabBarController.m in Sources */,
-				A03577281D8FC135006D050F /* SummerTreeViewController.m in Sources */,
-				A03577151D8F7CB0006D050F /* SpringViewController.m in Sources */,
-				A035771C1D8F7D28006D050F /* SpringFlowerViewController.m in Sources */,
-				A03577251D8F8866006D050F /* SpringTreeViewController.m in Sources */,
+				A0D23AFC1E14CA2600BEC8AE /* PresentationViewController.m in Sources */,
+				A0D23AED1E14C9A300BEC8AE /* SeasonTabBarController.m in Sources */,
+				A0D23B041E14CBB500BEC8AE /* main.m in Sources */,
+				A0D23AFB1E14CA2600BEC8AE /* SpringViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,7 +379,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = JYTransition/Info.plist;
+				INFOPLIST_FILE = "JYTransition/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.NL.JYTransition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -380,7 +390,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = JYTransition/Info.plist;
+				INFOPLIST_FILE = "JYTransition/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.NL.JYTransition;
 				PRODUCT_NAME = "$(TARGET_NAME)";

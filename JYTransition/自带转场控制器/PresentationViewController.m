@@ -7,7 +7,7 @@
 //
 
 #import "PresentationViewController.h"
-#import "SummerTreeViewController.h"
+#import "PresentationValueToNextViewController.h"
 
 @interface PresentationViewController ()
 
@@ -65,7 +65,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     NSLog(@"prepare");
     if ([segue.identifier isEqualToString:@"ModalTransition"]) {
-        SummerTreeViewController *destinationVC = segue.destinationViewController;
+        PresentationValueToNextViewController *destinationVC = segue.destinationViewController;
         // 获取destinationVC,可传递参数
         destinationVC.msg = [NSString stringWithFormat:@"Message:%@", self.msgTF.text];
         // sender 通过判断是哪一个sender，做相应的操作

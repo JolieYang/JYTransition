@@ -16,6 +16,8 @@
 
 @implementation WinterViewController {
     UIViewController *_currentVC;
+    UIViewController *_fromVC;
+    UIViewController *_toVC;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -32,13 +34,17 @@
     
     [self.view addSubview:a.view];
     _currentVC = a;
+    _fromVC = self.childViewControllers[0];
+    _toVC = self.childViewControllers[1];
     
 }
 - (IBAction)FlipFromRightAction:(id)sender {
-    [self transitionFromViewController:_currentVC toViewController:self.childViewControllers[1] duration:0.5 options:UIViewAnimationOptionTransitionCurlUp animations:^{
-    } completion:^(BOOL finished) {
-        
-    }];
+    [self transitionFromViewController:_currentVC
+                      toViewController:self.childViewControllers[1]
+                              duration:0.5
+                               options:UIViewAnimationOptionTransitionCurlUp
+                            animations:^{}
+                            completion:^(BOOL finished) {}];
 }
 
 - (void)didReceiveMemoryWarning {

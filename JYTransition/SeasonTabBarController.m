@@ -12,8 +12,7 @@
 
 #import "SeasonTabBarController.h"
 #import "SpringViewController.h"
-#import "SummerViewController.h"
-#import "SummerFlowerViewController.h"
+#import "WinterViewController.h"
 
 @interface SeasonTabBarController ()
 

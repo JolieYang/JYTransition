@@ -10,8 +10,8 @@
 // UINavigationController
 
 #import "SpringViewController.h"
-#import "SpringFlowerViewController.h"
-#import "SummerFlowerViewController.h"
+#import "PushFlowerViewController.h"
+#import "PresentationViewController.h"
 
 @interface SpringViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *SpringLB;
@@ -43,7 +43,7 @@
 }
 
 - (IBAction)presentationAction:(id)sender {
-    SummerFlowerViewController *vc = [[self storyboard] instantiateViewControllerWithIdentifier:@"SummerFlowerViewController"];
+    PresentationViewController *vc = [[self storyboard] instantiateViewControllerWithIdentifier:@"SummerFlowerViewController"];
     //    [self presentViewController:vc animated:YES completion:nil];
     [self presentViewController:vc animated:YES completion:^{
         // 设置vc界面TF的值，但不是很友好，显示效果为： 切换到vc界面,然后对msgTF文本进行赋值. 查看了下什么时候调用该方法，是在VC界面viewDidAppear后调用该方法.
@@ -52,7 +52,7 @@
 }
 
 - (IBAction)ViewControllerUnwindSegue:(UIStoryboardSegue *)unwindSegue {
-    SummerFlowerViewController *vc = unwindSegue.sourceViewController;
+    PresentationViewController *vc = unwindSegue.sourceViewController;
     if ([unwindSegue.identifier isEqualToString:@"summerFlowerDismiss"]) {
         self.SpringLB.text = vc.msgTF.text;
     };
@@ -61,7 +61,7 @@
 #pragma mark Segue 设置Segue的两种方式: Button To VC; VC to VC;
 - (void)performSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
     if ([identifier isEqualToString:@"SpringToFlower"]) {
-        SpringFlowerViewController *vc = [[self storyboard] instantiateViewControllerWithIdentifier:@"SpringFlowerViewController"];
+        PushFlowerViewController *vc = [[self storyboard] instantiateViewControllerWithIdentifier:@"SpringFlowerViewController"];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }
