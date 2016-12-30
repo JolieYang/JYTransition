@@ -22,8 +22,8 @@
     // 2.设置toVC的初始frame
     CGRect screenBounds = [[UIScreen mainScreen] bounds];
     CGRect finalFrame = [transitionContext finalFrameForViewController:toVC];
-    toVC.view.frame = CGRectOffset(finalFrame, 0, screenBounds.size.height);
-//    toVC.view.frame = CGRectOffset(finalFrame, screenBounds.size.width, 0);
+//    toVC.view.frame = CGRectOffset(finalFrame, 0, screenBounds.size.height);
+    toVC.view.frame = CGRectOffset(finalFrame, screenBounds.size.width, 0);
     
     // 3. 添加toVC到containerView
     UIView *containerView = [transitionContext containerView];

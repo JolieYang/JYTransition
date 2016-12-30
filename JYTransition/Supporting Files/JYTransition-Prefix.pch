@@ -1,0 +1,16 @@
+//
+//  JYTransition-Prefix.pch
+//  JYTransition
+//
+//  Created by Jolie_Yang on 2016/12/30.
+//  Copyright © 2016年 Jolie_Yang. All rights reserved.
+//
+
+#ifndef JYTransition_Prefix_pch
+#define JYTransition_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <UIKit/UIKit.h>
+
+#endif /* JYTransition_Prefix_pch */

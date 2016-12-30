@@ -28,6 +28,8 @@
 		A0D23B081E14CD5300BEC8AE /* SummerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23B071E14CD5300BEC8AE /* SummerViewController.m */; };
 		A0D23B0B1E14DE8600BEC8AE /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23B0A1E14DE8600BEC8AE /* ModalViewController.m */; };
 		A0D23B0E1E14E69900BEC8AE /* BouncePresentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23B0D1E14E69900BEC8AE /* BouncePresentAnimation.m */; };
+		A0D23B131E160F5F00BEC8AE /* SwipeInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23B121E160F5F00BEC8AE /* SwipeInteractiveTransition.m */; };
+		A0D23B1B1E162B9400BEC8AE /* NormalDismissAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23B1A1E162B9400BEC8AE /* NormalDismissAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +71,11 @@
 		A0D23B0A1E14DE8600BEC8AE /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
 		A0D23B0C1E14E69900BEC8AE /* BouncePresentAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BouncePresentAnimation.h; sourceTree = "<group>"; };
 		A0D23B0D1E14E69900BEC8AE /* BouncePresentAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BouncePresentAnimation.m; sourceTree = "<group>"; };
+		A0D23B111E160F5F00BEC8AE /* SwipeInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeInteractiveTransition.h; sourceTree = "<group>"; };
+		A0D23B121E160F5F00BEC8AE /* SwipeInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeInteractiveTransition.m; sourceTree = "<group>"; };
+		A0D23B141E16231600BEC8AE /* JYTransition-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "JYTransition-Prefix.pch"; path = "Supporting Files/JYTransition-Prefix.pch"; sourceTree = "<group>"; };
+		A0D23B191E162B9400BEC8AE /* NormalDismissAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalDismissAnimation.h; sourceTree = "<group>"; };
+		A0D23B1A1E162B9400BEC8AE /* NormalDismissAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalDismissAnimation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +130,7 @@
 				A035770A1D8F784A006D050F /* LaunchScreen.storyboard */,
 				A0D23B011E14CBB500BEC8AE /* Info.plist */,
 				A0D23B021E14CBB500BEC8AE /* main.m */,
+				A0D23B141E16231600BEC8AE /* JYTransition-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -186,6 +194,10 @@
 				A0D23B0A1E14DE8600BEC8AE /* ModalViewController.m */,
 				A0D23B0C1E14E69900BEC8AE /* BouncePresentAnimation.h */,
 				A0D23B0D1E14E69900BEC8AE /* BouncePresentAnimation.m */,
+				A0D23B191E162B9400BEC8AE /* NormalDismissAnimation.h */,
+				A0D23B1A1E162B9400BEC8AE /* NormalDismissAnimation.m */,
+				A0D23B111E160F5F00BEC8AE /* SwipeInteractiveTransition.h */,
+				A0D23B121E160F5F00BEC8AE /* SwipeInteractiveTransition.m */,
 			);
 			path = "自定义转场";
 			sourceTree = "<group>";
@@ -265,6 +277,7 @@
 				A03577011D8F784A006D050F /* AppDelegate.m in Sources */,
 				A0D23AFA1E14CA2600BEC8AE /* PushSecondViewController.m in Sources */,
 				A0D23AE71E13B19800BEC8AE /* AutumnViewController.m in Sources */,
+				A0D23B131E160F5F00BEC8AE /* SwipeInteractiveTransition.m in Sources */,
 				A0D23B001E14CBA700BEC8AE /* ChildBViewController.m in Sources */,
 				A0D23AF91E14CA2600BEC8AE /* PushFlowerViewController.m in Sources */,
 				A0D23AEA1E13B4F800BEC8AE /* CATransitionPopViewController.m in Sources */,
@@ -274,6 +287,7 @@
 				A0D23ADD1E13A5CA00BEC8AE /* WinterViewController.m in Sources */,
 				A0D23AFC1E14CA2600BEC8AE /* PresentationViewController.m in Sources */,
 				A0D23B0B1E14DE8600BEC8AE /* ModalViewController.m in Sources */,
+				A0D23B1B1E162B9400BEC8AE /* NormalDismissAnimation.m in Sources */,
 				A0D23AED1E14C9A300BEC8AE /* SeasonTabBarController.m in Sources */,
 				A0D23B041E14CBB500BEC8AE /* main.m in Sources */,
 				A0D23B0E1E14E69900BEC8AE /* BouncePresentAnimation.m in Sources */,
