@@ -27,6 +27,7 @@
 		A0D23B041E14CBB500BEC8AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23B021E14CBB500BEC8AE /* main.m */; };
 		A0D23B081E14CD5300BEC8AE /* SummerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23B071E14CD5300BEC8AE /* SummerViewController.m */; };
 		A0D23B0B1E14DE8600BEC8AE /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23B0A1E14DE8600BEC8AE /* ModalViewController.m */; };
+		A0D23B0E1E14E69900BEC8AE /* BouncePresentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23B0D1E14E69900BEC8AE /* BouncePresentAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,8 @@
 		A0D23B071E14CD5300BEC8AE /* SummerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummerViewController.m; sourceTree = "<group>"; };
 		A0D23B091E14DE8600BEC8AE /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
 		A0D23B0A1E14DE8600BEC8AE /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
+		A0D23B0C1E14E69900BEC8AE /* BouncePresentAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BouncePresentAnimation.h; sourceTree = "<group>"; };
+		A0D23B0D1E14E69900BEC8AE /* BouncePresentAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BouncePresentAnimation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +184,8 @@
 				A0D23B071E14CD5300BEC8AE /* SummerViewController.m */,
 				A0D23B091E14DE8600BEC8AE /* ModalViewController.h */,
 				A0D23B0A1E14DE8600BEC8AE /* ModalViewController.m */,
+				A0D23B0C1E14E69900BEC8AE /* BouncePresentAnimation.h */,
+				A0D23B0D1E14E69900BEC8AE /* BouncePresentAnimation.m */,
 			);
 			path = "自定义转场";
 			sourceTree = "<group>";
@@ -271,6 +276,7 @@
 				A0D23B0B1E14DE8600BEC8AE /* ModalViewController.m in Sources */,
 				A0D23AED1E14C9A300BEC8AE /* SeasonTabBarController.m in Sources */,
 				A0D23B041E14CBB500BEC8AE /* main.m in Sources */,
+				A0D23B0E1E14E69900BEC8AE /* BouncePresentAnimation.m in Sources */,
 				A0D23AFB1E14CA2600BEC8AE /* SpringViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,6 +392,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "JYTransition/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.NL.JYTransition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -397,6 +404,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "JYTransition/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.NL.JYTransition;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -105,7 +105,7 @@
             </objects>
             <point key="canvasLocation" x="2592" y="-1049"/>
         </scene>
-        <!--Summer View Controller-->
+        <!--summer-->
         <scene sceneID="YUd-WD-mMl">
             <objects>
                 <viewController id="NMl-dJ-UNW" customClass="SummerViewController" sceneMemberID="viewController">
@@ -130,11 +130,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="summer" image="summer" id="RLU-yZ-UqI"/>
                     <navigationItem key="navigationItem" id="yI6-kY-23D"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nJs-px-b6f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2125" y="305"/>
+            <point key="canvasLocation" x="1605" y="294"/>
         </scene>
         <!--Presentation View Controller-->
         <scene sceneID="anN-lN-mwT">
@@ -214,9 +216,9 @@
                     </tabBar>
                     <connections>
                         <segue destination="Nns-V3-NFc" kind="relationship" relationship="viewControllers" id="tZP-Q0-P0K"/>
-                        <segue destination="B3Z-ja-FVz" kind="relationship" relationship="viewControllers" id="FjM-9g-dge"/>
-                        <segue destination="Mbu-Jh-zRq" kind="relationship" relationship="viewControllers" id="w68-dt-NUz"/>
-                        <segue destination="VMk-xU-Wus" kind="relationship" relationship="viewControllers" id="ugc-LU-weI"/>
+                        <segue destination="NMl-dJ-UNW" kind="relationship" relationship="viewControllers" id="zfG-gU-Zib"/>
+                        <segue destination="Mbu-Jh-zRq" kind="relationship" relationship="viewControllers" id="hqI-j0-LCx"/>
+                        <segue destination="VMk-xU-Wus" kind="relationship" relationship="viewControllers" id="fmd-0P-ZVk"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aHU-Hw-g5k" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -418,31 +420,13 @@
             </objects>
             <point key="canvasLocation" x="1605" y="-335"/>
         </scene>
-        <!--Summer-->
-        <scene sceneID="af6-x7-9IT">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="B3Z-ja-FVz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Summer" image="summer" id="6Y9-26-gdE"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="R2V-v2-cec">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="NMl-dJ-UNW" kind="relationship" relationship="rootViewController" id="8lt-8r-aBk"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tXZ-0b-BGC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1605" y="297"/>
-        </scene>
         <!--winter-->
         <scene sceneID="R6U-ll-NTk">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VMk-xU-Wus" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="winter" image="winter_icon" id="Aot-So-5Vc"/>
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="7A9-PD-vrK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -454,7 +438,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fuh-2b-nNF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1605" y="1546"/>
+            <point key="canvasLocation" x="1595" y="1546"/>
         </scene>
         <!--ChildA View Controller-->
         <scene sceneID="y5E-A8-fuJ">
