@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Spring View Controller-->
+        <!--自带转场控制器-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="SpringViewController" sceneMemberID="viewController">
@@ -55,7 +55,7 @@
                             <constraint firstItem="yRm-7N-IxH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yRL-35-bhP"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="0pr-9M-DGL"/>
+                    <navigationItem key="navigationItem" title="自带转场控制器" id="0pr-9M-DGL"/>
                     <connections>
                         <outlet property="SpringLB" destination="Vkq-W7-LJ4" id="5Wx-eD-ZSh"/>
                         <segue destination="FRB-1E-05s" kind="show" identifier="SpringToFlower" id="p8z-Od-Y8K"/>
@@ -401,7 +401,7 @@
             </objects>
             <point key="canvasLocation" x="2034" y="1546"/>
         </scene>
-        <!--Spring-->
+        <!--Navigation Controller-->
         <scene sceneID="cMU-DZ-Xvc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nns-V3-NFc" sceneMemberID="viewController">
@@ -413,10 +413,16 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
+                        <outlet property="delegate" destination="Xxd-OS-IDo" id="IAK-CM-vsp"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZIT-OZ-lt4"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YAZ-T8-Vcq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="Xxd-OS-IDo" customClass="CustomNavigationControllerDelegate">
+                    <connections>
+                        <outlet property="navigationController" destination="Nns-V3-NFc" id="Cdm-td-SrM"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="1605" y="-335"/>
         </scene>
