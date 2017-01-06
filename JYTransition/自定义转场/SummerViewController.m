@@ -11,11 +11,14 @@
 #import "BouncePresentAnimation.h"
 #import "SwipeInteractiveTransition.h"
 #import "NormalDismissAnimation.h"
+#import "JYTransitionDelegate.h"
 
 @interface SummerViewController ()<ModalViewControllerDelegate, UIViewControllerTransitioningDelegate>
 @property (nonatomic, strong) BouncePresentAnimation *presentAnimation;
 @property (nonatomic, strong) SwipeInteractiveTransition *swipeInteractiveTransition;
 @property (nonatomic, strong) NormalDismissAnimation *dismissAniamtion;
+
+@property (nonatomic, strong) JYTransitionDelegate *encapsulationTransitionDelegate;
 @end
 
 @implementation SummerViewController
@@ -26,6 +29,8 @@
     self.presentAnimation = [BouncePresentAnimation new];
     self.swipeInteractiveTransition = [SwipeInteractiveTransition new];
     self.dismissAniamtion = [NormalDismissAnimation new];
+    
+    self.encapsulationTransitionDelegate = [JYTransitionDelegate new];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,6 +42,12 @@
     mvc.transitioningDelegate = self;
     mvc.delegate = self;
     [self.swipeInteractiveTransition wireToViewController:mvc];
+    [self presentViewController:mvc animated:YES completion:nil];
+}
+- (IBAction)encapsulationModelAction:(id)sender {
+    ModalViewController *mvc = [[self storyboard] instantiateViewControllerWithIdentifier:@"ModalViewController"];
+    mvc.transitioningDelegate = self.encapsulationTransitionDelegate;
+    mvc.delegate = self;
     [self presentViewController:mvc animated:YES completion:nil];
 }
 

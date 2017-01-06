@@ -127,6 +127,16 @@
                                     <action selector="modalAction:" destination="NMl-dJ-UNW" eventType="touchUpInside" id="8Mv-UF-QQL"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N16-kW-UFH">
+                                <rect key="frame" x="89" y="310" width="143" height="39"/>
+                                <color key="backgroundColor" red="0.99975007770000002" green="0.59942942860000004" blue="0.79572242500000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Encapsulation Model">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="encapsulationModelAction:" destination="NMl-dJ-UNW" eventType="touchUpInside" id="68H-G1-uct"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

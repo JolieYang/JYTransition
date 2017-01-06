@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "JYTransition/&#x81ea;&#x5e26;&#x8f6c;&#x573a;&#x63a7;&#x5236;&#x5668;/UINavigationController/CustomPopAnimation.m"
-            timestampString = "505119980.080016"
+            filePath = "JYTransition/&#x81ea;&#x5b9a;&#x4e49;&#x8f6c;&#x573a;/SummerViewController.m"
+            timestampString = "505384792.349448"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "-animateTransition:"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "-animationControllerForPresentedController:presentingController:sourceController:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
