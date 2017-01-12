@@ -332,39 +332,39 @@
                                     <action selector="fadeAction:" destination="Mbu-Jh-zRq" eventType="touchUpInside" id="cFd-4z-9Mt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Df0-gv-fWG">
-                                <rect key="frame" x="79" y="72" width="63" height="36"/>
-                                <color key="backgroundColor" red="0.99975007770000002" green="0.59942942860000004" blue="0.79572242500000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Push">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="pushAction:" destination="Mbu-Jh-zRq" eventType="touchUpInside" id="tTf-ur-nEe"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZO-bV-Ztq">
-                                <rect key="frame" x="152" y="72" width="56" height="36"/>
+                                <rect key="frame" x="130" y="72" width="96" height="36"/>
                                 <color key="backgroundColor" red="0.99975007770000002" green="0.59942942860000004" blue="0.79572242500000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="MoveIn">
+                                <state key="normal" title="rippleEffect">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="moveInAction:" destination="Mbu-Jh-zRq" eventType="touchUpInside" id="2kd-79-sQT"/>
+                                    <action selector="rippleEffectAction:" destination="Mbu-Jh-zRq" eventType="touchUpInside" id="ada-hN-mju"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4Z-Je-VFN">
-                                <rect key="frame" x="216" y="72" width="62" height="36"/>
+                                <rect key="frame" x="228" y="72" width="72" height="36"/>
                                 <color key="backgroundColor" red="0.99975007770000002" green="0.59942942860000004" blue="0.79572242500000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Reveal">
+                                <state key="normal" title="pageCurl">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="revealAction:" destination="Mbu-Jh-zRq" eventType="touchUpInside" id="QQ9-DC-nVr"/>
+                                    <action selector="pageCurlAction:" destination="Mbu-Jh-zRq" eventType="touchUpInside" id="FCB-aA-Avg"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red_snowman" translatesAutoresizingMaskIntoConstraints="NO" id="VTR-as-bir">
                                 <rect key="frame" x="0.0" y="116" width="320" height="403"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Df0-gv-fWG">
+                                <rect key="frame" x="79" y="72" width="48" height="36"/>
+                                <color key="backgroundColor" red="0.99975007770000002" green="0.59942942860000004" blue="0.79572242500000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="cube">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cubeAction:" destination="Mbu-Jh-zRq" eventType="touchUpInside" id="omm-kN-Cpu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

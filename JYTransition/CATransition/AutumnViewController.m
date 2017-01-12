@@ -8,6 +8,20 @@
 
 #import "AutumnViewController.h"
 #import "CATransitionPopViewController.h"
+/* 过渡效果
+ kCATransitionFade           //交叉淡化过渡(不支持过渡方向)
+ kCATransitionPush           //新视图把旧视图推出去
+ kCATransitionMoveIn         //新视图移到旧视图上面
+ kCATransitionReveal         //将旧视图移开,显示下面的新视图
+ cube           //立方体翻滚效果
+ oglFlip        //上下左右翻转效果
+ suckEffect     //收缩效果，如一块布被抽走(不支持过渡方向)
+ rippleEffect   //滴水效果(不支持过渡方向)
+ pageCurl       //向上翻页效果
+ pageUnCurl     //向下翻页效果
+ cameraIrisHollowOpen  //相机镜头打开效果(不支持过渡方向)
+ cameraIrisHollowClose //相机镜头关上效果(不支持过渡方向)
+ */
 
 @interface AutumnViewController ()
 
@@ -28,15 +42,15 @@
     [self transitionWithType:kCATransitionFade];
 }
 
-- (IBAction)pushAction:(id)sender {
-    [self transitionWithType:kCATransitionPush];
+- (IBAction)cubeAction:(id)sender {
+    [self transitionWithType:@"cube"];
 }
 
-- (IBAction)moveInAction:(id)sender {
-    [self transitionWithType:kCATransitionMoveIn];
+- (IBAction)rippleEffectAction:(id)sender {
+    [self transitionWithType:@"rippleEffect"];
 }
-- (IBAction)revealAction:(id)sender {
-    [self transitionWithType:kCATransitionReveal];
+- (IBAction)pageCurlAction:(id)sender {
+    [self transitionWithType:@"pageCurl"];
     
 }
 
@@ -44,8 +58,13 @@
     CATransition *animation = [CATransition animation];
     animation.duration = 0.5;
     animation.timingFunction = UIViewAnimationOptionCurveEaseInOut;
-    animation.type = type;
-    animation.subtype = kCATransitionFromRight;
+    
+    if (type == kCATransitionFade || [type isEqualToString: @"suckEffect"] || [type isEqualToString: @"rippleEffect"] || [type isEqualToString: @"cameraIrisHollowOpen"] || [type isEqualToString: @"cameraIrisHollowClose"]) {
+        animation.type = type;
+    } else {
+        animation.type = type;
+        animation.subtype = kCATransitionFromRight;
+    }
     
     CATransitionPopViewController *pop = [[self storyboard] instantiateViewControllerWithIdentifier:@"CATransitionPopViewController"];
     
