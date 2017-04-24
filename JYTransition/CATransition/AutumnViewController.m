@@ -7,7 +7,7 @@
 //
 
 #import "AutumnViewController.h"
-#import "CATransitionPopViewController.h"
+#import "MapleLeafViewController.h"
 /* 过渡效果
  kCATransitionFade           //交叉淡化过渡(不支持过渡方向)
  kCATransitionPush           //新视图把旧视图推出去
@@ -56,27 +56,27 @@
 
 - (void)transitionWithType:(NSString *)type {
     CATransition *animation = [CATransition animation];
-    animation.duration = 0.5;
+    animation.duration = 0.5;// 转场动画持续时间
     animation.timingFunction = UIViewAnimationOptionCurveEaseInOut;
     
     if (type == kCATransitionFade || [type isEqualToString: @"suckEffect"] || [type isEqualToString: @"rippleEffect"] || [type isEqualToString: @"cameraIrisHollowOpen"] || [type isEqualToString: @"cameraIrisHollowClose"]) {
         animation.type = type;
     } else {
-        animation.type = type;
-        animation.subtype = kCATransitionFromRight;
+        animation.type = type;// 动画类型
+        animation.subtype = kCATransitionFromRight;// 转场时动画切换的方向
     }
     
-    CATransitionPopViewController *pop = [[self storyboard] instantiateViewControllerWithIdentifier:@"CATransitionPopViewController"];
+    MapleLeafViewController *pop = [[self storyboard] instantiateViewControllerWithIdentifier:@"CATransitionPopViewController"];
     
     // 有导航栏
-//    [self.navigationController.view.layer addAnimation:animation forKey:@"kTransitionAnimation"];
-//    [self.navigationController pushViewController:pop animated:YES];
+    [self.navigationController.view.layer addAnimation:animation forKey:@"kTransitionAnimation"];
+    [self.navigationController pushViewController:pop animated:NO];
     
     // 无导航栏
     // [Tip]在Window上执行动画，才可在转场时执行动画。在view上执行动画，转场时无法执行
 //    [self.view.layer addAnimation:animation forKey:@"Animation"];
-    [self.view.window.layer addAnimation:animation forKey:@"kTansitionAnimation"];
-    [self presentViewController:pop animated:NO completion:nil];// Animated设为NO，只见自定义动画。
+//    [self.view.window.layer addAnimation:animation forKey:@"kTansitionAnimation"];
+//    [self presentViewController:pop animated:NO completion:nil];// Animated设为NO，只见自定义动画。
 }
 
 @end

@@ -38,6 +38,7 @@
     _toVC = self.childViewControllers[1];
     
 }
+// 翻页
 - (IBAction)FlipFromRightAction:(id)sender {
     [self transitionFromViewController:_currentVC
                       toViewController:self.childViewControllers[1]

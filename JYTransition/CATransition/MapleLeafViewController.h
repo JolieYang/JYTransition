@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CATransitionPopViewController : UIViewController
+@interface MapleLeafViewController : UIViewController
 
 @end

@@ -23,25 +23,11 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRm-7N-IxH">
-                                <rect key="frame" x="82" y="302" width="156" height="30"/>
-                                <state key="normal" title="UINavigation转场:Push"/>
-                                <connections>
-                                    <action selector="jumpAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eDw-NY-Xbq"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DSg-yf-2y6">
-                                <rect key="frame" x="48" y="340" width="225" height="30"/>
-                                <state key="normal" title="UITabBarController转场: 切换Tab"/>
-                                <connections>
-                                    <action selector="tabBarControllerTransitionAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DOV-Gg-er3"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbx-EY-35s">
-                                <rect key="frame" x="102" y="378" width="117" height="30"/>
+                                <rect key="frame" x="102" y="311" width="117" height="30"/>
                                 <state key="normal" title="Presentation转场"/>
                                 <connections>
-                                    <action selector="presentationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8t1-Yt-eut"/>
+                                    <action selector="presentationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CiM-yI-u8w"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -49,63 +35,18 @@
                         <constraints>
                             <constraint firstItem="Vkq-W7-LJ4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1u8-fP-vZ7"/>
                             <constraint firstItem="Vkq-W7-LJ4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SFN-Kj-6sl"/>
-                            <constraint firstItem="yRm-7N-IxH" firstAttribute="top" secondItem="Vkq-W7-LJ4" secondAttribute="bottom" constant="8" id="XN1-v3-ddw"/>
-                            <constraint firstItem="DSg-yf-2y6" firstAttribute="top" secondItem="yRm-7N-IxH" secondAttribute="bottom" constant="8" id="de9-IW-buv"/>
-                            <constraint firstItem="DSg-yf-2y6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rZC-5r-VLE"/>
-                            <constraint firstItem="yRm-7N-IxH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yRL-35-bhP"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="自带转场控制器" id="0pr-9M-DGL"/>
                     <connections>
                         <outlet property="SpringLB" destination="Vkq-W7-LJ4" id="5Wx-eD-ZSh"/>
-                        <segue destination="FRB-1E-05s" kind="show" identifier="SpringToFlower" id="p8z-Od-Y8K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2137" y="-335"/>
         </scene>
-        <!--Push Flower View Controller-->
-        <scene sceneID="6N3-Hn-62R">
-            <objects>
-                <viewController storyboardIdentifier="SpringFlowerViewController" id="FRB-1E-05s" customClass="PushFlowerViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ppD-pp-6Hn"/>
-                        <viewControllerLayoutGuide type="bottom" id="RTC-Rs-JWa"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="uRr-aY-vmt">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vt2-r9-egN">
-                                <rect key="frame" x="84" y="269" width="153" height="30"/>
-                                <state key="normal" title="UINavigation转场: Pop"/>
-                                <connections>
-                                    <action selector="popAction:" destination="FRB-1E-05s" eventType="touchUpInside" id="I1w-UD-8WB"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLT-Ht-bc0">
-                                <rect key="frame" x="80" y="231" width="160" height="30"/>
-                                <state key="normal" title="UINavigation转场: Push"/>
-                                <connections>
-                                    <segue destination="8RP-jn-7md" kind="show" id="7Nb-ro-VsH"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Vt2-r9-egN" firstAttribute="centerX" secondItem="uRr-aY-vmt" secondAttribute="centerX" id="09c-GK-YjR"/>
-                            <constraint firstItem="Vt2-r9-egN" firstAttribute="centerY" secondItem="uRr-aY-vmt" secondAttribute="centerY" id="68W-me-UCm"/>
-                            <constraint firstItem="Vt2-r9-egN" firstAttribute="top" secondItem="RLT-Ht-bc0" secondAttribute="bottom" constant="8" id="KJk-wU-1Pt"/>
-                            <constraint firstItem="RLT-Ht-bc0" firstAttribute="centerX" secondItem="uRr-aY-vmt" secondAttribute="centerX" id="dPG-U3-IM4"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="O9H-4w-hN6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2592" y="-1049"/>
-        </scene>
-        <!--summer-->
+        <!--Summer View Controller-->
         <scene sceneID="YUd-WD-mMl">
             <objects>
                 <viewController id="NMl-dJ-UNW" customClass="SummerViewController" sceneMemberID="viewController">
@@ -117,16 +58,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OnK-aq-dBP">
-                                <rect key="frame" x="113" y="266" width="95" height="36"/>
-                                <color key="backgroundColor" red="0.99975007770000002" green="0.59942942860000004" blue="0.79572242500000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Modal">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="modalAction:" destination="NMl-dJ-UNW" eventType="touchUpInside" id="8Mv-UF-QQL"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N16-kW-UFH">
                                 <rect key="frame" x="89" y="310" width="143" height="39"/>
                                 <color key="backgroundColor" red="0.99975007770000002" green="0.59942942860000004" blue="0.79572242500000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -140,83 +71,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="summer" image="summer" id="RLU-yZ-UqI"/>
                     <navigationItem key="navigationItem" id="yI6-kY-23D"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nJs-px-b6f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1605" y="294"/>
+            <point key="canvasLocation" x="2137" y="294"/>
         </scene>
-        <!--Presentation View Controller-->
-        <scene sceneID="anN-lN-mwT">
-            <objects>
-                <viewController storyboardIdentifier="SummerFlowerViewController" id="zja-F5-Tz3" customClass="PresentationViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="XfN-Dr-6kT"/>
-                        <viewControllerLayoutGuide type="bottom" id="2hR-MW-Cpa"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="hDm-wf-MOe">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ro-Cj-0d4">
-                                <rect key="frame" x="49" y="269" width="223" height="30"/>
-                                <state key="normal" title="Dismiss转场,反向传值给上级界面"/>
-                                <connections>
-                                    <action selector="dismissAction:" destination="zja-F5-Tz3" eventType="touchUpInside" id="WsI-Tj-F8w"/>
-                                    <segue destination="OhN-8h-Hc0" kind="unwind" identifier="summerFlowerDismiss" unwindAction="ViewControllerUnwindSegue:" id="I3O-Qc-bGR"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VE4-wk-DUw">
-                                <rect key="frame" x="35" y="231" width="250" height="30"/>
-                                <state key="normal" title="Modal转场:Show正向传值给下级界面"/>
-                                <connections>
-                                    <action selector="modalAction:" destination="zja-F5-Tz3" eventType="touchUpInside" id="BnL-pY-zaN"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mbZ-L6-V5T">
-                                <rect key="frame" x="91" y="193" width="139" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="139" id="43S-57-AnY"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Msg:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAJ-x5-qUl">
-                                <rect key="frame" x="45" y="197" width="38" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="VE4-wk-DUw" firstAttribute="top" secondItem="mbZ-L6-V5T" secondAttribute="bottom" constant="8" id="4ph-y5-Euv"/>
-                            <constraint firstItem="5ro-Cj-0d4" firstAttribute="top" secondItem="VE4-wk-DUw" secondAttribute="bottom" constant="8" id="D9Q-sb-9hJ"/>
-                            <constraint firstItem="5ro-Cj-0d4" firstAttribute="centerX" secondItem="hDm-wf-MOe" secondAttribute="centerX" id="E6D-oD-TJu"/>
-                            <constraint firstItem="mbZ-L6-V5T" firstAttribute="leading" secondItem="RAJ-x5-qUl" secondAttribute="trailing" constant="8" id="NLV-xu-whE"/>
-                            <constraint firstItem="VE4-wk-DUw" firstAttribute="centerX" secondItem="hDm-wf-MOe" secondAttribute="centerX" id="Qdx-Y0-uM5"/>
-                            <constraint firstItem="mbZ-L6-V5T" firstAttribute="centerX" secondItem="hDm-wf-MOe" secondAttribute="centerX" id="W52-HW-W6C"/>
-                            <constraint firstItem="5ro-Cj-0d4" firstAttribute="centerY" secondItem="hDm-wf-MOe" secondAttribute="centerY" id="vlT-af-nWR"/>
-                            <constraint firstItem="mbZ-L6-V5T" firstAttribute="centerY" secondItem="RAJ-x5-qUl" secondAttribute="centerY" id="zDp-mT-KOg"/>
-                        </constraints>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="msgTF" destination="mbZ-L6-V5T" id="1xy-3E-fF2"/>
-                        <segue destination="FtB-dD-cm6" kind="presentation" identifier="ModalTransition" id="PBE-1w-XCr"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="L8U-LJ-l4R" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="OhN-8h-Hc0" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="2592" y="-341"/>
-        </scene>
-        <!--Season Tab Bar Controller-->
+        <!--Tab Bar Controller-->
         <scene sceneID="F3a-Oa-uij">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="4pd-qn-e74" customClass="SeasonTabBarController" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="4pd-qn-e74" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="q6W-Tt-Wx9"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -226,89 +91,14 @@
                     </tabBar>
                     <connections>
                         <segue destination="Nns-V3-NFc" kind="relationship" relationship="viewControllers" id="tZP-Q0-P0K"/>
-                        <segue destination="NMl-dJ-UNW" kind="relationship" relationship="viewControllers" id="zfG-gU-Zib"/>
-                        <segue destination="Mbu-Jh-zRq" kind="relationship" relationship="viewControllers" id="hqI-j0-LCx"/>
+                        <segue destination="CMQ-U5-sxt" kind="relationship" relationship="viewControllers" id="zfG-gU-Zib"/>
+                        <segue destination="zwt-Qj-scS" kind="relationship" relationship="viewControllers" id="hqI-j0-LCx"/>
                         <segue destination="VMk-xU-Wus" kind="relationship" relationship="viewControllers" id="fmd-0P-ZVk"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aHU-Hw-g5k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1037" y="414"/>
-        </scene>
-        <!--Push Second View Controller-->
-        <scene sceneID="e1y-uZ-vM7">
-            <objects>
-                <viewController id="8RP-jn-7md" customClass="PushSecondViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Hvg-t2-V83"/>
-                        <viewControllerLayoutGuide type="bottom" id="ZpX-hV-OWO"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="61Y-Vq-RBV">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bzb-N0-z4U">
-                                <rect key="frame" x="48" y="269" width="225" height="30"/>
-                                <state key="normal" title="UINavigation转场:Pop To RootVC"/>
-                                <connections>
-                                    <action selector="popToRootAction:" destination="8RP-jn-7md" eventType="touchUpInside" id="eU2-py-Mvd"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Bzb-N0-z4U" firstAttribute="centerX" secondItem="61Y-Vq-RBV" secondAttribute="centerX" id="FyP-KM-gl9"/>
-                            <constraint firstItem="Bzb-N0-z4U" firstAttribute="centerY" secondItem="61Y-Vq-RBV" secondAttribute="centerY" id="k3I-pp-yHR"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Njn-Ld-Quf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2970" y="-1049"/>
-        </scene>
-        <!--Presentation Value To Next View Controller-->
-        <scene sceneID="Ih1-8y-GlF">
-            <objects>
-                <viewController id="FtB-dD-cm6" customClass="PresentationValueToNextViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="MAJ-wz-Ui5"/>
-                        <viewControllerLayoutGuide type="bottom" id="iAP-CH-lU4"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Ea7-Zl-HgQ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lfv-t7-4MF">
-                                <rect key="frame" x="95" y="269" width="130" height="30"/>
-                                <state key="normal" title="Modal转场:Dismiss"/>
-                                <connections>
-                                    <action selector="dismissAction:" destination="FtB-dD-cm6" eventType="touchUpInside" id="x74-u7-NtK"/>
-                                    <segue destination="oyD-Ec-6AR" kind="unwind" unwindAction="close:" id="Jfn-xT-xHU"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="msg:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Zh-uh-8iG">
-                                <rect key="frame" x="141" y="240" width="38" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Lfv-t7-4MF" firstAttribute="centerY" secondItem="Ea7-Zl-HgQ" secondAttribute="centerY" id="0r8-OU-YZ3"/>
-                            <constraint firstItem="Lfv-t7-4MF" firstAttribute="centerX" secondItem="Ea7-Zl-HgQ" secondAttribute="centerX" id="7t5-XN-ppU"/>
-                            <constraint firstItem="Lfv-t7-4MF" firstAttribute="top" secondItem="3Zh-uh-8iG" secondAttribute="bottom" constant="8" id="RNy-Pt-TMY"/>
-                            <constraint firstItem="3Zh-uh-8iG" firstAttribute="centerX" secondItem="Ea7-Zl-HgQ" secondAttribute="centerX" id="l5u-WQ-ZlP"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="msgLB" destination="3Zh-uh-8iG" id="phq-iQ-i9p"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9CN-SC-cnY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="oyD-Ec-6AR" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="2970" y="-335"/>
         </scene>
         <!--CATransition-->
         <scene sceneID="cZd-Xi-7ou">
@@ -368,13 +158,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="autumn" image="autumn_icon" id="j4x-5n-9B9"/>
                     <navigationItem key="navigationItem" title="CATransition" id="uVn-Ph-br1"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O1E-hT-xb3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1605" y="922"/>
+            <point key="canvasLocation" x="2137" y="922"/>
         </scene>
         <!--TransitionFromViewController-->
         <scene sceneID="HMB-Wi-3du">
@@ -411,7 +200,7 @@
             </objects>
             <point key="canvasLocation" x="2034" y="1546"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Spring-->
         <scene sceneID="cMU-DZ-Xvc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nns-V3-NFc" sceneMemberID="viewController">
@@ -423,16 +212,10 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <outlet property="delegate" destination="Xxd-OS-IDo" id="IAK-CM-vsp"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZIT-OZ-lt4"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YAZ-T8-Vcq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="Xxd-OS-IDo" customClass="CustomNavigationControllerDelegate">
-                    <connections>
-                        <outlet property="navigationController" destination="Nns-V3-NFc" id="Cdm-td-SrM"/>
-                    </connections>
-                </customObject>
             </objects>
             <point key="canvasLocation" x="1605" y="-335"/>
         </scene>
@@ -536,10 +319,10 @@
             </objects>
             <point key="canvasLocation" x="2781" y="1546"/>
         </scene>
-        <!--Transition Pop View Controller-->
+        <!--Maple Leaf View Controller-->
         <scene sceneID="kmJ-Sq-hrS">
             <objects>
-                <viewController storyboardIdentifier="CATransitionPopViewController" id="Upn-g0-rFf" customClass="CATransitionPopViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CATransitionPopViewController" id="Upn-g0-rFf" customClass="MapleLeafViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uMa-5e-Hmi"/>
                         <viewControllerLayoutGuide type="bottom" id="bgF-fp-Tbi"/>
@@ -572,7 +355,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4La-ht-sjb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2137" y="922"/>
+            <point key="canvasLocation" x="2550" y="917"/>
         </scene>
         <!--Modal View Controller-->
         <scene sceneID="g6x-YG-56w">
@@ -604,7 +387,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZVz-3y-hV7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2018" y="294"/>
+            <point key="canvasLocation" x="2503" y="-335"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="EHc-VK-RB5">
@@ -624,7 +407,45 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AVs-QM-eHL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2834" y="305"/>
+            <point key="canvasLocation" x="3898" y="305"/>
+        </scene>
+        <!--autumn-->
+        <scene sceneID="hbK-qE-RyR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zwt-Qj-scS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="autumn" image="autumn_icon" id="j4x-5n-9B9"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jbm-fV-hUC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Mbu-Jh-zRq" kind="relationship" relationship="rootViewController" id="f4w-bL-U09"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hRh-GR-7uW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1605" y="922"/>
+        </scene>
+        <!--summer-->
+        <scene sceneID="sfJ-uj-OeL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CMQ-U5-sxt" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="summer" image="summer" id="RLU-yZ-UqI"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ldX-XH-8eS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NMl-dJ-UNW" kind="relationship" relationship="rootViewController" id="8Tt-e8-YbS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rb7-iW-hr3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1605" y="294"/>
         </scene>
     </scenes>
     <resources>

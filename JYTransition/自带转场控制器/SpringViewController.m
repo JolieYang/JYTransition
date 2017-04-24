@@ -10,12 +10,16 @@
 // UINavigationController
 
 #import "SpringViewController.h"
-#import "PushFlowerViewController.h"
-#import "PresentationViewController.h"
+#import "ModalViewController.h"
+#import "BouncePresentAnimation.h"
+#import "SwipeInteractiveTransition.h"
+#import "NormalDismissAnimation.h"
 
-@interface SpringViewController ()
+@interface SpringViewController ()<ModalViewControllerDelegate, UIViewControllerTransitioningDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *SpringLB;
-
+@property (nonatomic, strong) BouncePresentAnimation *presentAnimation;
+@property (nonatomic, strong) SwipeInteractiveTransition *swipeInteractiveTransition;
+@property (nonatomic, strong) NormalDismissAnimation *dismissAniamtion;
 @end
 
 @implementation SpringViewController
@@ -23,6 +27,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.presentAnimation = [BouncePresentAnimation new];
+    self.swipeInteractiveTransition = [SwipeInteractiveTransition new];
+    self.dismissAniamtion = [NormalDismissAnimation new];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,40 +37,31 @@
     // Dispose of any resources that can be recreated.
 }
 #pragma mark Action
-- (IBAction)jumpAction:(id)sender {
-    // m1
-//    SpringFlowerViewController *vc = [[self storyboard] instantiateViewControllerWithIdentifier:@"SpringFlowerViewController"];
-//    [self.navigationController pushViewController:vc animated:YES];
-    
-    // m2 Segue
-    [self performSegueWithIdentifier:@"SpringToFlower" sender:nil];
-}
-- (IBAction)tabBarControllerTransitionAction:(id)sender {
-    self.tabBarController.selectedIndex = 1;
-}
-
 - (IBAction)presentationAction:(id)sender {
-    PresentationViewController *vc = [[self storyboard] instantiateViewControllerWithIdentifier:@"SummerFlowerViewController"];
-    //    [self presentViewController:vc animated:YES completion:nil];
-    [self presentViewController:vc animated:YES completion:^{
-        // 设置vc界面TF的值，但不是很友好，显示效果为： 切换到vc界面,然后对msgTF文本进行赋值. 查看了下什么时候调用该方法，是在VC界面viewDidAppear后调用该方法.
-        vc.msgTF.text = @"hello,Rose";
-    }];
+//    PresentationViewController *mvc = [[self storyboard] instantiateViewControllerWithIdentifier:@"PresentationViewController"];
+    ModalViewController *mvc = [[self storyboard] instantiateViewControllerWithIdentifier:@"ModalViewController"];
+    mvc.transitioningDelegate = self;
+    mvc.delegate = self;
+    [self.swipeInteractiveTransition wireToViewController:mvc];
+    [self presentViewController:mvc animated:YES completion:nil];
 }
 
-- (IBAction)ViewControllerUnwindSegue:(UIStoryboardSegue *)unwindSegue {
-    PresentationViewController *vc = unwindSegue.sourceViewController;
-    if ([unwindSegue.identifier isEqualToString:@"summerFlowerDismiss"]) {
-        self.SpringLB.text = vc.msgTF.text;
-    };
+#pragma mark ModalViewControllerDelegate
+- (void)modalViewControllerDidClickedDismissButton:(ModalViewController *)vc {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-#pragma mark Segue 设置Segue的两种方式: Button To VC; VC to VC;
-- (void)performSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
-    if ([identifier isEqualToString:@"SpringToFlower"]) {
-        PushFlowerViewController *vc = [[self storyboard] instantiateViewControllerWithIdentifier:@"SpringFlowerViewController"];
-        [self.navigationController pushViewController:vc animated:YES];
-    }
+#pragma mark UIViewControllerTransitioningDelegate
+- (id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
+    return self.presentAnimation;
+}
+
+- (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
+    return self.dismissAniamtion;
+}
+
+- (nullable id <UIViewControllerInteractiveTransitioning>)interactionControllerForDismissal:(id <UIViewControllerAnimatedTransitioning>)animator {
+    return self.swipeInteractiveTransition.interacting ? self.swipeInteractiveTransition : nil;
 }
 
 @end

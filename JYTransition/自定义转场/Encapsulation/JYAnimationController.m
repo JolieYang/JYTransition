@@ -21,9 +21,9 @@
     UIView *toView = toVC.view;
     UIView *containerView = [transitionContext containerView];
    
-    CGRect initialFromVC = [transitionContext initialFrameForViewController:fromVC];
-    CGRect finalFromVC = [transitionContext finalFrameForViewController:fromVC];
-    CGRect initialToVC = [transitionContext initialFrameForViewController:toVC];
+//    CGRect initialFromVC = [transitionContext initialFrameForViewController:fromVC];
+//    CGRect finalFromVC = [transitionContext finalFrameForViewController:fromVC];
+//    CGRect initialToVC = [transitionContext initialFrameForViewController:toVC];
     CGRect finalToVC = [transitionContext finalFrameForViewController:toVC];
     
     NSTimeInterval duration = [self transitionDuration:transitionContext];

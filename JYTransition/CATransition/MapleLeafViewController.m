@@ -1,18 +1,18 @@
 //
-//  SpringFlowerViewController.m
+//  CATransitionPopViewController.m
 //  JYTransition
 //
-//  Created by Jolie_Yang on 16/9/19.
+//  Created by Jolie_Yang on 2016/12/28.
 //  Copyright © 2016年 Jolie_Yang. All rights reserved.
 //
 
-#import "PushFlowerViewController.h"
+#import "MapleLeafViewController.h"
 
-@interface PushFlowerViewController ()
+@interface MapleLeafViewController ()
 
 @end
 
-@implementation PushFlowerViewController
+@implementation MapleLeafViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,8 +24,12 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)popAction:(id)sender {
+    // 1.有导航栏
     [self.navigationController popViewControllerAnimated:YES];
+    // 无导航栏
+//    [self dismissViewControllerAnimated:YES completion:nil];
 }
+
 
 
 @end

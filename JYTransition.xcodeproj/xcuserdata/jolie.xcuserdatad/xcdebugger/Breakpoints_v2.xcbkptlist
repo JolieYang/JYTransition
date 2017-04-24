@@ -9,13 +9,45 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "JYTransition/&#x81ea;&#x5b9a;&#x4e49;&#x8f6c;&#x573a;/SummerViewController.m"
-            timestampString = "505384792.349448"
+            filePath = "JYTransition/TransitionFromViewController/WinterViewController.m"
+            timestampString = "514433738.695979"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "-animationControllerForPresentedController:presentingController:sourceController:"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "-FlipFromRightAction:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JYTransition/TransitionFromViewController/ChildAViewController.m"
+            timestampString = "514433756.256119"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "-flipAction:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JYTransition/TransitionFromViewController/ChildBViewController.m"
+            timestampString = "514433759.184303"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "-backAction:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
