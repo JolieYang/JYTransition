@@ -139,7 +139,7 @@
 			name = Transition;
 			sourceTree = "<group>";
 		};
-		A037794A1E1F8D5A009D3DE6 /* Encapsulation */ = {
+		A037794A1E1F8D5A009D3DE6 /* CustomViewControllerTransition */ = {
 			isa = PBXGroup;
 			children = (
 				A037794B1E1F8D5A009D3DE6 /* JYAnimationController.h */,
@@ -147,6 +147,7 @@
 				A037794D1E1F8D5A009D3DE6 /* JYTransitionDelegate.h */,
 				A037794E1E1F8D5A009D3DE6 /* JYTransitionDelegate.m */,
 			);
+			name = CustomViewControllerTransition;
 			path = Encapsulation;
 			sourceTree = "<group>";
 		};
@@ -163,7 +164,7 @@
 			path = "转场协议";
 			sourceTree = "<group>";
 		};
-		A09144121EADE85B0035A84F /* CustomTransition */ = {
+		A09144121EADE85B0035A84F /* CustomNavigationTransition */ = {
 			isa = PBXGroup;
 			children = (
 				A09144131EADE85B0035A84F /* CustomNavigationControllerDelegate.h */,
@@ -171,6 +172,7 @@
 				A09144151EADE85B0035A84F /* CustomPopAnimation.h */,
 				A09144161EADE85B0035A84F /* CustomPopAnimation.m */,
 			);
+			name = CustomNavigationTransition;
 			path = CustomTransition;
 			sourceTree = "<group>";
 		};
@@ -214,8 +216,8 @@
 		A0D23B051E14CD3900BEC8AE /* 封装自定义转场 */ = {
 			isa = PBXGroup;
 			children = (
-				A09144121EADE85B0035A84F /* CustomTransition */,
-				A037794A1E1F8D5A009D3DE6 /* Encapsulation */,
+				A09144121EADE85B0035A84F /* CustomNavigationTransition */,
+				A037794A1E1F8D5A009D3DE6 /* CustomViewControllerTransition */,
 				A0D23B061E14CD5300BEC8AE /* SummerViewController.h */,
 				A0D23B071E14CD5300BEC8AE /* SummerViewController.m */,
 			);

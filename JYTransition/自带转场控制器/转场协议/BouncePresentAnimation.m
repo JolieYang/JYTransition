@@ -39,7 +39,6 @@
                      animations:^{
                          toVC.view.frame = finalFrame;
                      } completion:^(BOOL finished) {
-                         //动画完成或者取消之后必须得调用的方法，系统接收到这个消息后将对控制器的状态进行维护
                          [transitionContext completeTransition:YES];
                      }];
 }

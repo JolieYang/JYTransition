@@ -6,9 +6,6 @@
 //  Copyright © 2016年 Jolie_Yang. All rights reserved.
 //
 
-// Note:
-// UINavigationController
-
 #import "SpringViewController.h"
 #import "ModalViewController.h"
 #import "BouncePresentAnimation.h"
@@ -38,7 +35,6 @@
 }
 #pragma mark Action
 - (IBAction)presentationAction:(id)sender {
-//    PresentationViewController *mvc = [[self storyboard] instantiateViewControllerWithIdentifier:@"PresentationViewController"];
     ModalViewController *mvc = [[self storyboard] instantiateViewControllerWithIdentifier:@"ModalViewController"];
     mvc.transitioningDelegate = self;
     mvc.delegate = self;
