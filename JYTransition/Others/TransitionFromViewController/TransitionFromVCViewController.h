@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WinterViewController : UIViewController
+@interface TransitionFromVCViewController : UIViewController
 
 @end

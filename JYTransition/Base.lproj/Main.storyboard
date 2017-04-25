@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--自带转场控制器-->
+        <!--自定义Modal转场-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="SpringViewController" sceneMemberID="viewController">
@@ -17,12 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spring" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vkq-W7-LJ4">
-                                <rect key="frame" x="135" y="273" width="50" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbx-EY-35s">
                                 <rect key="frame" x="102" y="311" width="117" height="30"/>
                                 <state key="normal" title="Presentation转场"/>
@@ -30,6 +24,12 @@
                                     <action selector="presentationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CiM-yI-u8w"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spring" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vkq-W7-LJ4">
+                                <rect key="frame" x="135" y="273" width="50" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -37,7 +37,7 @@
                             <constraint firstItem="Vkq-W7-LJ4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SFN-Kj-6sl"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="自带转场控制器" id="0pr-9M-DGL"/>
+                    <navigationItem key="navigationItem" title="自定义Modal转场" id="0pr-9M-DGL"/>
                     <connections>
                         <outlet property="SpringLB" destination="Vkq-W7-LJ4" id="5Wx-eD-ZSh"/>
                     </connections>
@@ -46,10 +46,10 @@
             </objects>
             <point key="canvasLocation" x="2137" y="-335"/>
         </scene>
-        <!--Summer View Controller-->
+        <!--Autumn View Controller-->
         <scene sceneID="YUd-WD-mMl">
             <objects>
-                <viewController id="NMl-dJ-UNW" customClass="SummerViewController" sceneMemberID="viewController">
+                <viewController id="NMl-dJ-UNW" customClass="AutumnViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hi3-PJ-dgh"/>
                         <viewControllerLayoutGuide type="bottom" id="HWi-Pn-mau"/>
@@ -76,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nJs-px-b6f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2137" y="294"/>
+            <point key="canvasLocation" x="2024" y="922"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="F3a-Oa-uij">
@@ -103,7 +103,7 @@
         <!--CATransition-->
         <scene sceneID="cZd-Xi-7ou">
             <objects>
-                <viewController id="Mbu-Jh-zRq" customClass="AutumnViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CATransitionViewController" id="Mbu-Jh-zRq" customClass="CATransitionViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9Io-Pc-tva"/>
                         <viewControllerLayoutGuide type="bottom" id="zhg-73-D2e"/>
@@ -163,12 +163,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O1E-hT-xb3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2137" y="922"/>
+            <point key="canvasLocation" x="2331" y="1546"/>
         </scene>
         <!--TransitionFromViewController-->
         <scene sceneID="HMB-Wi-3du">
             <objects>
-                <viewController id="FrN-ca-kIo" customClass="WinterViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TransitionFromVCViewController" id="FrN-ca-kIo" customClass="TransitionFromVCViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xm9-3a-Vc6"/>
                         <viewControllerLayoutGuide type="bottom" id="gyc-DV-k1e"/>
@@ -198,7 +198,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eiz-bq-cQh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2034" y="1546"/>
+            <point key="canvasLocation" x="2363" y="2190"/>
         </scene>
         <!--Spring-->
         <scene sceneID="cMU-DZ-Xvc">
@@ -232,12 +232,32 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="FrN-ca-kIo" kind="relationship" relationship="rootViewController" id="Ox6-vJ-Pci"/>
+                        <segue destination="etQ-hw-tsO" kind="relationship" relationship="rootViewController" id="YBf-Nz-BXw"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fuh-2b-nNF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1595" y="1546"/>
+        </scene>
+        <!--Winter Root View Controller-->
+        <scene sceneID="kfO-Pd-1vy">
+            <objects>
+                <viewController id="etQ-hw-tsO" customClass="WinterRootViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="taH-7Q-LsA"/>
+                        <viewControllerLayoutGuide type="bottom" id="fQU-e0-Onk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HUb-q2-TYn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lp7-mx-9gY"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aLv-uC-EgS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1970" y="1551"/>
         </scene>
         <!--ChildA View Controller-->
         <scene sceneID="y5E-A8-fuJ">
@@ -276,7 +296,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gTP-YX-hGX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2424" y="1546"/>
+            <point key="canvasLocation" x="2726" y="2190"/>
         </scene>
         <!--ChildB View Controller-->
         <scene sceneID="uwN-Md-dUm">
@@ -317,7 +337,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MG1-83-0z4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2781" y="1546"/>
+            <point key="canvasLocation" x="3088" y="2185"/>
         </scene>
         <!--Maple Leaf View Controller-->
         <scene sceneID="kmJ-Sq-hrS">
@@ -355,7 +375,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4La-ht-sjb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2550" y="917"/>
+            <point key="canvasLocation" x="2677" y="1551"/>
         </scene>
         <!--Modal View Controller-->
         <scene sceneID="g6x-YG-56w">
@@ -421,7 +441,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Mbu-Jh-zRq" kind="relationship" relationship="rootViewController" id="f4w-bL-U09"/>
+                        <segue destination="NMl-dJ-UNW" kind="relationship" relationship="rootViewController" id="3PN-Qb-cia"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hRh-GR-7uW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -431,7 +451,7 @@
         <!--summer-->
         <scene sceneID="sfJ-uj-OeL">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CMQ-U5-sxt" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CMQ-U5-sxt" customClass="CustomNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="summer" image="summer" id="RLU-yZ-UqI"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ldX-XH-8eS">
@@ -440,12 +460,75 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="NMl-dJ-UNW" kind="relationship" relationship="rootViewController" id="8Tt-e8-YbS"/>
+                        <segue destination="fEV-sx-fjM" kind="relationship" relationship="rootViewController" id="ZJO-DU-EZa"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rb7-iW-hr3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1605" y="294"/>
+        </scene>
+        <!--自定义Push转场-->
+        <scene sceneID="tL1-PR-lw6">
+            <objects>
+                <viewController id="fEV-sx-fjM" customClass="SummerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eAd-e9-W2b"/>
+                        <viewControllerLayoutGuide type="bottom" id="pCx-13-kY5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wWs-60-7eH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="loz-xi-tUX">
+                                <rect key="frame" x="20" y="197" width="280" height="30"/>
+                                <state key="normal" title="Push">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pushAction:" destination="fEV-sx-fjM" eventType="touchUpInside" id="6ho-9M-dv0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.79537039995193481" green="0.49260812997817993" blue="0.26788461208343506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="自定义Push转场" id="Oci-HI-fal"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f3R-0M-sJo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1996" y="294"/>
+        </scene>
+        <!--Push View Controller-->
+        <scene sceneID="WZN-3n-Yas">
+            <objects>
+                <viewController storyboardIdentifier="PushViewController" id="8x6-IZ-cBg" customClass="PushViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="19P-Kd-0LZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="mqk-s4-ZIk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Df1-Bf-qLC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nc-XG-g4r">
+                                <rect key="frame" x="113" y="271" width="95" height="36"/>
+                                <color key="backgroundColor" red="0.99975007770000002" green="0.59942942860000004" blue="0.79572242500000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="返回">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backAction:" destination="8x6-IZ-cBg" eventType="touchUpInside" id="ap1-QB-uJT"/>
+                                    <action selector="dismissAction:" destination="gEr-ra-IUw" eventType="touchUpInside" id="gly-h0-WCF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.46349048614501953" green="0.58415836095809937" blue="0.43978706002235413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ciz-D0-z0c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2348" y="294"/>
         </scene>
     </scenes>
     <resources>

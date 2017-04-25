@@ -6,7 +6,7 @@
 //  Copyright © 2016年 Jolie_Yang. All rights reserved.
 //
 
-#import "AutumnViewController.h"
+#import "CATransitionViewController.h"
 #import "MapleLeafViewController.h"
 /* 过渡效果
  kCATransitionFade           //交叉淡化过渡(不支持过渡方向)
@@ -23,11 +23,11 @@
  cameraIrisHollowClose //相机镜头关上效果(不支持过渡方向)
  */
 
-@interface AutumnViewController ()
+@interface CATransitionViewController ()
 
 @end
 
-@implementation AutumnViewController
+@implementation CATransitionViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

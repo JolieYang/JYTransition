@@ -41,13 +41,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "JYTransition/TransitionFromViewController/ChildBViewController.m"
-            timestampString = "514433759.184303"
+            filePath = "JYTransition/&#x5c01;&#x88c5;&#x81ea;&#x5b9a;&#x4e49;&#x8f6c;&#x573a;/CustomTransition/CustomNavigationControllerDelegate.m"
+            timestampString = "514802999.226127"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "-backAction:"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "-pan:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

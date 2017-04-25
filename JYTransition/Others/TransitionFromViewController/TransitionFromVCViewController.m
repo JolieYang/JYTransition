@@ -6,15 +6,15 @@
 //  Copyright © 2016年 Jolie_Yang. All rights reserved.
 //
 
-#import "WinterViewController.h"
+#import "TransitionFromVCViewController.h"
 #import "ChildAViewController.h"
 #import "ChildBViewController.h"
 
-@interface WinterViewController ()
+@interface TransitionFromVCViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *flipFromRightButton;
 @end
 
-@implementation WinterViewController {
+@implementation TransitionFromVCViewController {
     UIViewController *_currentVC;
     UIViewController *_fromVC;
     UIViewController *_toVC;

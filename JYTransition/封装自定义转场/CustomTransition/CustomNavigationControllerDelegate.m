@@ -11,7 +11,6 @@
 
 @interface CustomNavigationControllerDelegate ()
 
-@property (weak, nonatomic) IBOutlet UINavigationController *navigationController;
 @property (nonatomic, strong) CustomPopAnimation *animation;
 @property (nonatomic, strong) UIPercentDrivenInteractiveTransition *interactionController;
 @end
@@ -23,6 +22,17 @@
     [self.navigationController.view addGestureRecognizer:pan];
     
     self.animation = [CustomPopAnimation new];
+}
+
+- (instancetype)init {
+    self = [super init];
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
+    [self.navigationController.view addGestureRecognizer:pan];
+    self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+    
+    self.animation = [CustomPopAnimation new];
+    
+    return self;
 }
 
 - (void)pan:(UIPanGestureRecognizer *)recognizer {
@@ -51,6 +61,7 @@
 #pragma mark UINavigationControllerDelegate
 - (nullable id <UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController
                                    interactionControllerForAnimationController:(id <UIViewControllerAnimatedTransitioning>) animationController {
+    // 非交互的转场中，则返回nil
     return self.interactionController;
 }
 
@@ -58,6 +69,7 @@
                                             animationControllerForOperation:(UINavigationControllerOperation)operation
                                                          fromViewController:(UIViewController *)fromVC
                                                             toViewController:(UIViewController *)toVC {
+    // operation 分为Push, Pop, None 通过不同的operation返回不同的动画
     if (operation == UINavigationControllerOperationPop) {
         return self.animation;
     }

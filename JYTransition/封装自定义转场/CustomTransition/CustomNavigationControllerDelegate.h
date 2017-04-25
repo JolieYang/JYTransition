@@ -10,4 +10,5 @@
 
 @interface CustomNavigationControllerDelegate : NSObject<UINavigationControllerDelegate>
 
+@property (weak, nonatomic) IBOutlet UINavigationController *navigationController;
 @end

@@ -17,10 +17,10 @@
 @implementation SwipeInteractiveTransition
 - (void)wireToViewController:(UIViewController *)vc {
     self.presentingVC = vc;
-    [self prepareGestureRecognizerInView:vc.view];
+    [self addGestureRecognizerInView:vc.view];
 }
 
-- (void)prepareGestureRecognizerInView:(UIView *)view {
+- (void)addGestureRecognizerInView:(UIView *)view {
     UIPanGestureRecognizer *gesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)];
     [view addGestureRecognizer:gesture];
 }
@@ -37,10 +37,11 @@
             [self.presentingVC dismissViewControllerAnimated:YES completion:nil];
             break;
         case UIGestureRecognizerStateChanged: {
-            CGFloat fraction = translation.x / 400.0;
+            CGFloat fraction = translation.x / 400.0;// 设置向右滑动400像素及以上代表100%，translation.x代表向右，translation.y代表向下滑动
             fraction = fminf(fmaxf(fraction, 0.0), 1.0);
             self.shouldComplete = (fraction > 0.5);
-            [self updateInteractiveTransition:fraction];
+            
+            [self updateInteractiveTransition:fraction];//  更新百分比
             break;
         }
         case UIGestureRecognizerStateEnded:
@@ -57,5 +58,6 @@
             break;
     }
 }
+
 
 @end
