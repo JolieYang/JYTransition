@@ -24,17 +24,6 @@
     self.animation = [CustomPopAnimation new];
 }
 
-- (instancetype)init {
-    self = [super init];
-    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
-    [self.navigationController.view addGestureRecognizer:pan];
-    self.navigationController.interactivePopGestureRecognizer.enabled = NO;
-    
-    self.animation = [CustomPopAnimation new];
-    
-    return self;
-}
-
 - (void)pan:(UIPanGestureRecognizer *)recognizer {
     UIView *view = self.navigationController.view;
     if (recognizer.state == UIGestureRecognizerStateBegan) {

@@ -65,7 +65,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="encapsulationModelAction:" destination="NMl-dJ-UNW" eventType="touchUpInside" id="68H-G1-uct"/>
+                                    <segue destination="k4D-eC-aRK" kind="show" id="CRH-f5-hLQ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -77,6 +77,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nJs-px-b6f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2024" y="922"/>
+        </scene>
+        <!--Leaf View Controller-->
+        <scene sceneID="zal-6S-4i6">
+            <objects>
+                <viewController storyboardIdentifier="LeafViewController" id="k4D-eC-aRK" customClass="LeafViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uja-oN-JR9"/>
+                        <viewControllerLayoutGuide type="bottom" id="rCR-Sb-nx0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XQf-p4-EbC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.39099276065826416" green="0.51907432079315186" blue="0.36644595861434937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5D0-WW-hai" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2412" y="922"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="F3a-Oa-uij">
@@ -429,7 +448,7 @@
             </objects>
             <point key="canvasLocation" x="3898" y="305"/>
         </scene>
-        <!--autumn-->
+        <!--Navigation Controller-->
         <scene sceneID="hbK-qE-RyR">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zwt-Qj-scS" sceneMemberID="viewController">
@@ -441,10 +460,16 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
+                        <outlet property="delegate" destination="SIz-c7-nbV" id="m8S-Ei-x2I"/>
                         <segue destination="NMl-dJ-UNW" kind="relationship" relationship="rootViewController" id="3PN-Qb-cia"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hRh-GR-7uW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="SIz-c7-nbV" customClass="CustomNavigationControllerDelegate">
+                    <connections>
+                        <outlet property="navigationController" destination="zwt-Qj-scS" id="Qn0-p6-JRm"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="1605" y="922"/>
         </scene>

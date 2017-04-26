@@ -8,9 +8,11 @@
 
 #import "JYTransitionDelegate.h"
 #import "JYAnimationController.h"
-#import "BouncePresentAnimation.h"
-#import "NormalDismissAnimation.h"
-#import "SwipeInteractiveTransition.h"
+#import "JYInteractiveTransition.h"
+
+@interface JYTransitionDelegate ()
+@property (nonatomic, strong) JYInteractiveTransition *interactiveTransition;
+@end
 
 @implementation JYTransitionDelegate
 #pragma mark UIViewControllerTransitioningDelegate
@@ -20,5 +22,12 @@
 
 - (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
     return [JYAnimationController new];
+}
+
+- (nullable id <UIViewControllerInteractiveTransitioning>)interactionControllerForDismissal:(id <UIViewControllerAnimatedTransitioning>)animator {
+    if (!self.interactiveTransition) {
+        self.interactiveTransition = [JYInteractiveTransition new];
+    }
+    return self.interactiveTransition.interacting ? self.interactiveTransition : nil;
 }
 @end

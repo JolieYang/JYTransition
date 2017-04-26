@@ -20,12 +20,10 @@
     UIView *containerView = [transitionContext containerView];
     [containerView addSubview:toVC.view];
     toVC.view.alpha = 0;
-//    [containerView sendSubviewToBack:toVC.view];
     
     NSTimeInterval duration = [self transitionDuration:transitionContext];
     [UIView animateWithDuration:duration
                      animations:^{
-//                         fromVC.view.bounds = CGRectMake(0, 0, 1, fromVC.view.frame.size.height);
                          fromVC.view.transform = CGAffineTransformMakeScale(0.1, 0.1);
                          toVC.view.alpha = 1.0;
                      } completion:^(BOOL finished) {

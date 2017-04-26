@@ -12,11 +12,16 @@
 #import "SwipeInteractiveTransition.h"
 #import "NormalDismissAnimation.h"
 
-@interface SpringViewController ()<ModalViewControllerDelegate, UIViewControllerTransitioningDelegate>
+#import "JYTransitionDelegate.h"
+
+@interface SpringViewController ()<ModalViewControllerDelegate, UIViewControllerTransitioningDelegate >
 @property (weak, nonatomic) IBOutlet UILabel *SpringLB;
 @property (nonatomic, strong) BouncePresentAnimation *presentAnimation;
 @property (nonatomic, strong) SwipeInteractiveTransition *swipeInteractiveTransition;
 @property (nonatomic, strong) NormalDismissAnimation *dismissAniamtion;
+
+
+@property (nonatomic, strong) JYTransitionDelegate *transitionDelegte;
 @end
 
 @implementation SpringViewController
@@ -35,11 +40,9 @@
 }
 #pragma mark Action
 - (IBAction)presentationAction:(id)sender {
-    ModalViewController *mvc = [[self storyboard] instantiateViewControllerWithIdentifier:@"ModalViewController"];
-    mvc.transitioningDelegate = self;
-    mvc.delegate = self;
-    [self.swipeInteractiveTransition wireToViewController:mvc];
-    [self presentViewController:mvc animated:YES completion:nil];
+//    [self presentTransition];
+    
+    [self encapsulationPresentTransition];
 }
 
 
@@ -48,6 +51,14 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+// m1: presentTransition
+- (void)presentTransition {
+    ModalViewController *mvc = [[self storyboard] instantiateViewControllerWithIdentifier:@"ModalViewController"];
+    mvc.transitioningDelegate = self;
+    mvc.delegate = self;
+    [self.swipeInteractiveTransition wireToViewController:mvc];
+    [self presentViewController:mvc animated:YES completion:nil];
+}
 #pragma mark UIViewControllerTransitioningDelegate
 - (id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
     return self.presentAnimation;
@@ -59,6 +70,16 @@
 
 - (nullable id <UIViewControllerInteractiveTransitioning>)interactionControllerForDismissal:(id <UIViewControllerAnimatedTransitioning>)animator {
     return self.swipeInteractiveTransition.interacting ? self.swipeInteractiveTransition : nil;
+}
+
+// m2: encasulationTransition 将转场代理封装成类，VC代码更为简洁
+- (void)encapsulationPresentTransition {
+    self.transitionDelegte = [JYTransitionDelegate new];
+    ModalViewController *mvc = [[self storyboard] instantiateViewControllerWithIdentifier:@"ModalViewController"];
+    mvc.transitioningDelegate = self.transitionDelegte;
+    mvc.delegate = self;
+    [self.swipeInteractiveTransition wireToViewController:mvc];
+    [self presentViewController:mvc animated:YES completion:nil];
 }
 
 @end

@@ -41,13 +41,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "JYTransition/&#x5c01;&#x88c5;&#x81ea;&#x5b9a;&#x4e49;&#x8f6c;&#x573a;/CustomTransition/CustomNavigationControllerDelegate.m"
-            timestampString = "514802999.226127"
+            filePath = "JYTransition/&#x81ea;&#x5b9a;&#x4e49;Push&#x8f6c;&#x573a;/CustomNavigationController.m"
+            timestampString = "514869255.520968"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "-pan:"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "-navigationController:animationControllerForOperation:fromViewController:toViewController:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JYTransition/&#x81ea;&#x5b9a;&#x4e49;Push&#x8f6c;&#x573a;/PushViewController.m"
+            timestampString = "514869291.563851"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "-backItemAction"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
